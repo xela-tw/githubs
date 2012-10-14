@@ -1,0 +1,38 @@
+{ 
+ "guiVlanIpIfTNum":"4",
+ "guiVlanIpIfT":[
+ {
+ "gid":"8000",
+ "name":"VLAN1",
+ "type":"0",
+ "userDefined":"1",
+ "ip":"192.168.2.1",
+ "netmask":"255.255.255.0"
+ },
+ {
+ "gid":"8001",
+ "name":"VLAN2",
+ "type":"2",
+ "userDefined":"1",
+ "ip":"192.168.3.1",
+ "netmask":"255.255.255.0"
+ },
+ {
+ "gid":"269484032",
+ "name":"VLAN3",
+ "type":"2",
+ "userDefined":"1",
+ "ip":"192.168.3.1",
+ "netmask":"255.255.255.0"
+ },
+ {
+ "gid":"269484033",
+ "name":"VLAN4",
+ "type":"2",
+ "userDefined":"1",
+ "ip":"192.168.3.1",
+ "netmask":"255.255.255.0"
+ }
+ ]
+}
+

@@ -1,0 +1,155 @@
+<div class="tabs dialogForm">
+    <form id="form-vlan_interfaces" class="templateForm">
+    <ul>
+        <li><a href="#basic_settings">Basic Settings</a></li>
+        <li><a href="#dhcp_pool_settings">DHCP Pool Settings</a></li>
+ 	<li><a href="#ipv6_settings">IPv6 Settings</a></li>
+    </ul>
+    <div id="basic_settings" class="panelDiv">
+        <div id="div-basic_settings" class="labelDiv">
+	    <table id="table-basic_settings" class="">
+		<tr>
+		    <td class="alignLeft Fixed125">* Name</td>
+		    <td class="alignLeft"><input type="text" id="vlan_interfaces-name" /></td>
+		</tr>
+		<tr>
+		    <td class="alignLeft Fixed125">Interface</td>
+		    <td class="alignLeft">
+			<select id="vlan_interfaces-interface"></select>
+		    </td>
+		</tr>
+		<tr>
+		    <td class="alignLeft Fixed125">* VID</td>
+		    <td class="alignLeft"><input type="text" id="vlan_interfaces-vid" /> (1~4094)</td>
+		</tr>
+		<tr>
+		    <td class="alignLeft Fixed125">IP Address</td>
+		    <td class="alignLeft"><input type="text" id="vlan_interfaces-address" /></td>
+		</tr>
+		<tr>
+		    <td class="alignLeft Fixed125">Netmask</td>
+		    <td class="alignLeft"><input type="text" id="vlan_interfaces-netmask" /></td>
+		</tr>
+		<tr>
+		    <td class="alignLeft">MTU</td>
+		    <td class="alignLeft"><input type="radio" id="vlan_interfaces-mtuMode-0" name="mtuMode" value="0" /> Auto</td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="alignLeft"><input type="radio" id="vlan_interfaces-mtuMode-1" name="mtuMode" value="1" /> Manual</td>
+		</tr>
+		<tr class="mtuMode-1">
+		    <td></td>
+		    <td class="alignLeft"><span class="PH10"></span>Value <input type="text" id="vlan_interfaces-mtuValue" /></td>
+		</tr>
+		<tr>
+		    <td class="alignLeft">Zone</td>
+		    <td class="alignLeft">
+			<select id="vlan_interfaces-zone"></select>
+		    </td>
+		</tr>
+	    </table>
+        </div>
+	<div><p>IP Alias</p></div>
+   	<div id="div-ip_alias"class="tableDiv">
+            <table id="table-ip_alias" class="Create">
+                <thead>
+                   <tr>
+                        <th id="ipAliasT-address">Address</th>
+                        <th id="ipAliasT-netmask">Netmask</th>
+                        <th class="Edit Delete BT2">Action</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div id="dhcp_pool_settings" class="panelDiv">
+    <div id="div-dhcp_pool_settings" class="tableDiv">
+	<table id="table-dhcp_pool_settings">
+	    <tr>
+		<td class="alignLeft Fixed125">DHCP Mode</td>
+		<td class="alignLeft" colspan="2">
+		    <select id="vlan_interfaces-dhcpType"></select>
+		</td>
+            </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td class="alignRight">DHCP Server</td>
+		<td></td>
+		<td></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">Start IP Address</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-startIp" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">End IP Address</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-endIp" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">Lease Time</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-leaseTime" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">Gateway</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-gateway" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">DNS1</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-dns1" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">DNS2</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-dns2" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">WINS1</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-wins1" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">WINS2</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-wins2" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-1">
+		<td></td>
+		<td class="alignLeft">Domain Name</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-1-domainName" /></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-2">
+		<td class="alignRight">DHCP Relay</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+	    </tr>
+	    <tr class="vlan_interfaces-dhcpType-2">
+		<td></td>
+		<td class="alignLeft">Relay IP</td>
+		<td class="alignLeft"><input type="text" id="vlan_interfaces-dhcpType-2-relayIp" /></td>
+	    </tr>
+
+        </table>
+    </div>
+    </div>
+    <div id="ipv6_settings">
+        <div id="div-ipv6_settings" class="tableDiv">
+            <table id="table-ipv6_settings" class="DualInput Fixed500">
+                <tr>
+                    <td class="alignRight Fixed125">IPv6 Address</td>
+                    <td class="alignLeft"><input type="text" id="vlan_interfaces-ipv6Address" /></td>
+                </tr>
+                <tr>
+                    <td class="alignRight Fixed125">IPv6 Prefix Length</td>
+                    <td class="alignLeft"><input type="text" id="vlan_interfaces-ipv6PrefixLength" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</div>
+

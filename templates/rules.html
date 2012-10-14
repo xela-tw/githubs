@@ -1,0 +1,56 @@
+<div id="template-rules"  class="templateDiv">
+    <div class="tabs">
+	<ul>
+	    <li id="tab-rule"><a href="#panel-rule">Rule</a></li>
+	    <li id="tab-default_policy"><a href="#panel-default_policy">Default Policy</a></li>
+	</ul>
+	<div id="panel-rule" class="panelDiv">
+    	    <div id="div-query" class="criterion labelDiv">
+		<table id="table-query" >
+            	    <caption>Select Criterion For Rule Table</caption>
+		    <tr>
+		    	<td class="alignLeft Fixed200">From Zone <select id="query-fromZone"></select></td>
+		    	<td class="alignLeft Fixed200">To Zone <select id="query-toZone"></select></td>
+		    	<td class="alignLeft"><button class="Query" id="Query-rules">Query</button></td>
+		    </tr>
+        	</table>
+    	    </div>
+	    <div><hr /></div>
+    	    <div id="div-rules" class="tableDiv Confirm">
+	    	<table id="table-rules" class="Create Remove Refresh">
+		<thead>
+		    <tr>
+			<th class="checkboxCol"></th>
+			<th id="priority">Priority</th>
+			<th id="enabled">Enable</th>
+			<th id="fromZone">From Zone</th>
+			<th id="toZone">To Zone</th>
+			<th id="sourceAddressUser">Source Address/User</th>
+			<th id="destinationAddressUser">Destination Address/User</th>
+			<th id="serviceApplicationUrl">Services/Applications/URL</th>
+			<th id="schedule">Schedule</th>
+			<th id="hitCount">Hit Count</th>
+			<th id="log">Log</th>
+			<th id="matchAction">Match Action</th>
+			<th class="Edit Delete MoveUp MoveDown Move">Action</th>
+		    </tr>
+		</thead>
+	    	</table>
+	    </div>
+	</div>
+	<div id="panel-default_policy" class="panelDiv">
+	    <div id="div-default_policy" class="tableDiv Confirm">
+	    	<table id="table-default_policy">
+		    <thead>
+		    <tr>
+		    	<th id="fromZone">From Zone</th>
+		    	<th id="toZone">To Zone List</th>
+		    	<th class="selectCol" id="policy">Policy</th>
+		    </tr>
+		     </thead>
+		    </table>
+		</table>
+	    </div>
+	</div>
+    </div>
+</div>

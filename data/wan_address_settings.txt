@@ -1,0 +1,33 @@
+{ "ajaxData": [
+        {
+	"wanInterface"	: "WAN1",
+	"mode"		: "Auto",
+	"address"	: ""
+	},
+        {
+	"wanInterface"	: "WAN2",
+	"mode"		: "Auto",
+	"address"	: ""
+	},
+        {
+	"wanInterface"	: "WAN3",
+	"mode"		: "Auto",
+	"address"	: ""
+	},
+        {
+	"wanInterface"	: "WAN4",
+	"mode"		: "Auto",
+	"address"	: ""
+	},
+        {
+	"wanInterface"	: "WAN5",
+	"mode"		: "Auto",
+	"address"	: ""
+	},
+        {
+	"wanInterface"	: "WAN6",
+	"mode"		: "Auto",
+	"address"	: ""
+	}
+    ]
+}

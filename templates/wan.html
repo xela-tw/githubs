@@ -1,0 +1,59 @@
+<div id="template-wan"  class="templateDiv">
+<div class="tabs">
+    <ul>
+	<li id="tab-wan"><a href="#panel-wan">WAN Settings</a></li>
+	<li id="tab-multiwan"><a href="#panel-multiwan">Multiple WAN Settings</a></li>
+    </ul>
+    <div id="panel-wan" class="panelDiv">
+	<div id="div-wan" class="tableDiv Confirm">
+    	    <table id="table-wan" class="Create Remove">
+		<thead>
+	    	    <tr>
+			<th class="checkboxCol"></th>
+			<th id="name">Name</th>
+			<th id="wanProto">WAN Type</th>
+			<th id="address">IP Address</th>
+			<th id="portId">Physical Port</th>
+			<th id="weight">Weight</th>
+			<th id="backupWanName">Backup of</th>
+			<th id="zoneId">Zone</th>
+			<th class="Edit Delete">Action</th>
+	    	    </tr>
+        	</thead>
+    	    </table>
+	</div>
+	<div class="cahceForm"><form id="ajax-wan" class="ajaxForm"></form></div>
+    </div>
+    <div id="panel-multiwan" class="panelDiv">
+    	<div id="div-multiwan" class="labelDiv Confirm">
+	    <form id="form-multiwan">
+	    <table id="table-multiwan">
+		<tr>
+		    <td class="alignLeft Fixed40"><input type="radio" id="mode-0" name="mode" value="0" /></td>
+		    <td class="alignLeft">Weighted Load Balancing and Failover</td>
+		</tr>
+		<tr>
+		    <td class="Fixed40"></td>
+		    <td class="alignLeft">Detection Period</td>
+		</tr>
+		<tr>
+		    <td class="Fixed40"></td>
+		    <td class="alignLeft"><input class="mode-0" type="text" id="period" /></td>
+		</tr>
+		<tr>
+		    <td class="Fixed40"></td>
+		    <td class="alignLeft">Detection Retry Count</td>
+		</tr>
+		<tr>
+		    <td class="Fixed40"></td>
+		    <td class="alignLeft"><input class="mode-0" type="text" id="count" /></td>
+		</tr>
+		<tr>
+		    <td class="alignLeft Fixed40"><input type="radio" id="mode-1" name="mode" value="1" /></td>
+		    <td class="alignLeft">Routing Table Mode</td>
+		</tr>
+	    </table>
+	    </form>
+	</div>
+    </div>
+</div>

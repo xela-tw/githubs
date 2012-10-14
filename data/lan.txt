@@ -1,0 +1,12 @@
+{ "ajaxData": [
+        {
+	"lanName"		: "LAN",
+	"lanAddress"	: "1.2.3.4",
+	"lanDhcpPool"	: "cool",
+	"lanInterfaces"	: "helo",
+	"lanZone"		: "danger",
+	"lanPortList"		: "danger",
+	"lanMacAddress"		: "00:11:22:33:22:11"
+	}
+    ]
+}

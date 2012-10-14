@@ -1,0 +1,16 @@
+{
+    "ajaxData": [
+	{
+   	"ipAliasAddress": "192.168.123.1",
+    	"ipAliasNetmask": "255.255.255.0"
+	},
+	{
+   	"ipAliasAddress": "192.168.113.1",
+    	"ipAliasNetmask": "255.255.255.0"
+	},
+	{
+   	"ipAliasAddress": "192.168.133.1",
+    	"ipAliasNetmask": "255.255.255.0"
+	}
+    ]
+}

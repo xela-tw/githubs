@@ -1,0 +1,6 @@
+{
+    "emailNotificationStatus"	: "on",
+    "fromEmail"			: "123@titan.com",
+    "smtpServer"		: "smtp.titan.com",
+    "smtpAuthenication"		: "off"
+}

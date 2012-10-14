@@ -1,0 +1,46 @@
+<div class="dialogForm">
+    <form id="form-transform_policy" class="templateForm">
+        <div class="labelDiv">
+	    <div>
+		<label for="form-name">Name</label>
+		<td id="name"><input type="text" id="form-name" />
+	    </div>
+            <div>
+                <label for="form-cipher">Encryption</label>
+                    <select id="form-cipher">
+                        <option value="3des">ESP_3DES</option>
+                        <option value="aes128">ESP_AES_128</option>
+                        <option value="aes192">ESP_AES_192</option>
+                        <option value="aes256">ESP_AES_256</option>
+                    </select>
+                
+            </div>
+	    <div>
+                <label for="form-hash">Authenication</label>
+                    <select id="form-hash">
+                        <option value="sha1">SHA_1</option>
+                        <option value="md5">MD5</option>
+		    </select>
+		
+	    </div>
+	    <div>
+                <label for="form-pfsgroup">PFS Group</label>
+                    <select id="form-pfsgroup">
+                        <option value="modp1024">Group2 (1024 bits)</option>
+                        <option value="modp1536">Group5 (1536 bits)</option>
+                        <option value="modp2048">Group14 (2048 bits)</option>
+                        <option value="modp3072">Group15 (3072 bits)</option>
+                        <option value="modp4096">Group16 (4096 bits)</option>
+                        <option value="modp6144">Group17 (6144 bits)</option>
+                        <option value="modp8192">Group18 (8192 bits)</option>
+		    </select>
+		
+	    </div>
+	    <div>
+		<label for="form-lifetime">Lifetime</label>
+		<td id="lifetime"><input type="text" id="form-lifetime" />
+	    </div>
+        </div>
+    </form>
+</div>
+

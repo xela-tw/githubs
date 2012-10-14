@@ -1,0 +1,29 @@
+<div id="template-destination"  class="templateDiv">
+    <div class="criterion">
+	<fieldset>
+	    <legend>Period</legend>
+	    <b>Start Date: </b><input type="text" class="query-start" />
+	    <b>End Date: </b><input type="text" class="query-end" />
+	    <b>Aggregate By</b>	
+	    <select class="query-select">
+		<option value="None">None</option>
+		<option value="Host IP">Host IP</option>
+	    </select>
+	    <button class="query-button">Query</button>
+	</fieldset>
+    </div>
+    <div id="div-destination" class="tableDiv">
+	<table id="table-destination">
+	    <thead>
+		<tr>
+		<th id="hostIp">Host IP</th>
+		<th id="upstream">Upstream</th>
+		<th id="downstream">Downstream</th>
+		<th id="sessions">Sessions</th>
+		<th id="startDate">Start Date</th>
+		<th id="endDate">End Date</th>
+		</tr>
+	    </thead>
+	</table>
+    </div>
+</div>

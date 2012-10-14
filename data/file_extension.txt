@@ -1,0 +1,11 @@
+{ "ajaxData": [
+        {
+	"file_extension": ".hack",
+	"exception"	: "what the"
+	},
+        {
+	"file_extension": ".mock",
+	"exception"	: "up up"
+	}
+    ]
+}

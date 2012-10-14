@@ -1,0 +1,31 @@
+<div id="template-firmware" class="templateDiv">
+<div class="formDiv">
+<form id="form-firmware" enctype="multipart/form-data" action="/" method="post">
+    <div class="accordions Blocks">
+	<h4><a href="#">Firmware Version</a></h4>
+	<div class="tabelDiv">
+	    <table id="table-firmware" class="DualList">
+		<tr>
+		    <th>Primary Firmware Version</th>
+		    <td id="primaryFirmwareVersion"></td>
+		</tr>
+		<tr>
+		    <th>Secondary Firmware Version</th>
+		    <td id="secondaryFirmwareVersion"></td>
+		</tr>
+		<tr>
+		    <th>Switch Firmware</th>
+		    <td><button id="switchFirmware">Switch</button></td>
+		</tr>
+	    </table>
+	</div>
+    </div>
+    <div class="accordions Blocks">
+	<h4><a href="#">Upgrade Firmware</a></h4>
+	<div class="labelDiv">	
+	    <div><label for="browse">Upgrade Firmware</label><input id="browse" type="file" /></div>
+	    <div><button id="upgrade">Upgrade</button></div>
+	    <div><button id="factoryReset">Upgrade and Factory Reset</button></div>
+	</div>
+     </div>
+</div>

@@ -1,0 +1,8 @@
+{
+	    "systemName"	: "Titan UTM",
+	    "model"		: "Archer",
+	    "primaryFirmware"	: "1.0.12",
+	    "secondaryFirmware": "1.0.2",
+	    "serialNumber"	: "SN-1234",
+	    "systemUptime"	: "32 days 18 hours 20 minutes"
+}

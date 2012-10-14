@@ -1,0 +1,39 @@
+{ "ajaxData": [
+        {
+	"memoryUtilization"	: "0.41",
+	"date"			: "2012-08-01"
+	},
+        {
+	"memoryUtilization"	: "0.35",
+	"date"			: "2012-08-02"
+	},
+        {
+	"memoryUtilization"	: "0.23",
+	"date"			: "2012-08-03"
+	},
+        {
+	"memoryUtilization"	: "0.57",
+	"date"			: "2012-08-04"
+	},
+        {
+	"memoryUtilization"	: "0.20",
+	"date"			: "2012-08-05"
+	},
+        {
+	"memoryUtilization"	: "0.38",
+	"date"			: "2012-08-06"
+	},
+        {
+	"memoryUtilization"	: "0.42",
+	"date"			: "2012-08-07"
+	},
+        {
+	"memoryUtilization"	: "0.26",
+	"date"			: "2012-08-08"
+	},
+        {
+	"memoryUtilization"	: "0.99",
+	"date"			: "2012-08-09"
+	}
+    ]
+}

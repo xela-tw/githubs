@@ -1,0 +1,28 @@
+{ 
+"excepNum":"2",
+"excepT":[
+    {
+"entryId":"1",
+"srcAddrType":"0",
+"srcAddrGid":"999",
+"srcGAddrGid":"0",
+"dstAddrType":"1",
+"dstAddrGid":"0",
+"dstGAddrGid":"5678",
+"Log":"0",
+"cgiAction":"0"
+    },
+    {
+"entryId":"2",
+"srcAddrType":"1",
+"srcAddrGid":"0",
+"srcGAddrGid":"1111",
+"dstAddrType":"0",
+"dstAddrGid":"11",
+"dstGAddrGid":"0",
+"Log":"1",
+"cgiAction":"0"
+    }
+	],
+	 "licensed":"1"
+}

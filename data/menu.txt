@@ -1,0 +1,431 @@
+{
+    "menu": [
+       	{ 
+    	    "label" 	: "Dashboard",
+    	    "tab"	: "dashboard",
+    	    "panel"	: [
+    		{
+    		    "label"	: "System Dashboard",
+    		    "tab"	: "system_dashboard",
+    		    "template" 	: "templates/system_dashboard.html"
+    		},
+    		{
+    		    "label"	: "Netowrk Dashboard",
+    		    "tab"	: "network_dashboard",
+    		    "template"	: "templates/network_dashboard.html"
+    		},
+    		{
+    		    "label"	: "Security Dashboard",
+    		    "tab"	: "security_dashboard",
+    		    "template" 	: "templates/security_dashboard.html"
+    		}
+    	    ]
+    	},
+    	{
+    	    "label"	: "Reports",
+    	    "tab"	: "reports",
+    	    "panel"	: [
+    		{
+    		    "label"	: "Network",
+    		    "tab"	: "network",
+    		    "panel"	: [
+    			{
+    			    "label"	: "Show ARP Table",
+    			    "tab"	: "show_arp_table",
+    			    "template"	: "templates/show_arp_table.html"
+    			},
+    			{
+    			    "label"	: "Show Routing Table",
+    			    "tab"	: "show_routing_table",
+    			    "template"	: "templates/show_routing_table.html"
+    			},
+                        {
+                            "label"    	: "DHCP Bindings",
+                            "tab"       : "dhcp_bindings",
+                            "template"  : "templates/dhcp_bindings.html"
+                        },
+                        {
+                            "label"    	: "Status Summary",
+                            "tab"       : "status_summary",
+                            "template"  : "templates/status_summary.html"
+                        },
+                        {
+                            "label"    	: "Traffic Statistics",
+                            "tab"       : "traffic_statistics",
+                            "template"  : "templates/traffic_statistics.html"
+                        },
+                        {
+                            "label"    	: "WAN Bandwidth Report",
+                            "tab"       : "wan_bandwidth_report",
+                            "template"  : "templates/wan_bandwidth_report"
+                        }
+    		    ]
+    		},
+                {
+                    "label"     : "System Status",
+                    "tab"       : "system_status",
+                    "panel"     : [
+                        {
+                            "label"    	: "Process",
+                            "tab"       : "process",
+                            "template"  : "templates/process.html"
+                        },
+                        {
+                            "label"    	: "Resource Utilization",
+                            "tab"       : "resource_utilization",
+                            "template"  : "templates/resource_utilization.html"
+                        }
+
+                    ]
+                },
+                {
+                    "label"     : "NAT Status",
+                    "tab"       : "nat_status",
+                    "template"  : "templates/nat_status.html"
+                },
+                {
+                    "label"     : "Active Users",
+                    "tab"       : "active_users",
+                    "template"  : "templates/active_users.html"
+                },
+                {
+                    "label"     : "VPN Status",
+                    "tab"       : "vpn_status",
+                    "panel"     : [
+                        {
+                            "label"    	: "Active Sessions",
+                            "tab"       : "active_sessions",
+                            "template"  : "templates/active_sessions.html"
+                        },
+                        {
+                            "label"    	: "IPSec VPN Statistics",
+                            "tab"       : "ipsec_vpn_statistics",
+                            "template"  : "templates/ipsec_vpn_statistics.html"
+                        }
+
+                    ]
+		},
+                {
+                    "label"     : "Network Reports",
+                    "tab"       : "network_reports",
+                    "panel"     : [
+                        {
+                            "label"    	: "Traffic Direction",
+                            "tab"       : "traffic_direction",
+                            "template"  : "templates/traffic_direction.html"
+                        },
+                        {
+                            "label"    	: "Source",
+                            "tab"       : "source",
+                            "template"  : "templates/source.html"
+                        },
+                        {
+                            "label"    	: "Destination",
+                            "tab"       : "destination",
+                            "template"  : "templates/dastination.html"
+			}
+                    ]
+		},
+                {
+                    "label"     : "Security Reports",
+                    "tab"       : "security_reports",
+                    "panel"     : [
+                        {
+                            "label"    	: "File Extension",
+                            "tab"       : "file_extension",
+                            "template"  : "templates/file_extension.html"
+                        },
+                        {
+                            "label"    	: "Blocked Host",
+                            "tab"       : "blocked_host",
+                            "template"  : "templates/blocked_host.html"
+                        },
+                        {
+                            "label"    	: "Affected Host",
+                            "tab"       : "affected_host",
+                            "template"  : "templates/affected_host.html"
+			},
+                        {
+                            "label"    	: "AntiVirus",
+                            "tab"       : "antivirus",
+                            "template"  : "templates/antivirus.html"
+                        }
+                    ]
+		}
+    	    ]
+    	},
+    	{
+    	    "label"	: "Interface",
+    	    "tab"	: "interface",
+    	    "panel"	: [
+    		{
+    		    "label"	: "Port",
+    		    "tab"	: "port",
+                    "panel"     : [
+                        {
+                            "label"    	: "Port Configuration",
+                            "tab"       : "port_configuration",
+                            "template"  : "templates/port_configuration.html"
+                        }
+                    ]
+    		},
+    		{
+    		    "label"	: "WAN",
+    		    "tab"	: "wan",
+                    "panel"     : [
+                        {
+                            "label"    	: "WAN Settings",
+                            "tab"       : "wan_settings",
+                            "template"  : "templates/wan_settings.html"
+                        }
+                    ]
+    		},
+    		{
+    		    "label"	: "VLAN",
+    		    "tab"	: "vlan",
+                    "template"  : "templates/vlan.html",
+    		    "form"	: "forms/vlan.html"
+    		},
+    		{
+    		    "label"	: "DMZ",
+    		    "tab"	: "dmz",
+                    "template"  : "templates/dmz.html",
+    		    "form"	: "forms/dmz.html"
+    		},
+    		{
+    		    "label"	: "Zone",
+    		    "tab"	: "zone",
+                    "template"  : "templates/zone.html",
+    		    "form"	: "forms/zone.html"
+    		}
+    	    ]
+    	},
+        {
+            "label"     : "Networking",
+            "tab"       : "networking",
+            "panel"     : [
+                {
+                    "label"     : "Routing",
+                    "tab"       : "routing",
+                    "template"  : "templates/routing.html"
+                },
+                {
+                    "label"     : "ALG",
+                    "tab"       : "alg",
+                    "template"  : "templates/alg.html"
+		},
+    		{
+    		    "label"	: "Site-to-Site VPN",
+    		    "tab"	: "site_to_site_vpn",
+                    "panel"     : [
+                        {
+                            "label"    	: "IPSec Policies",
+                            "tab"       : "ipsec_policies",
+                            "template"  : "templates/ipsec_policies.html"
+                        },
+                        {
+                            "label"    	: "IKE  Policiy",
+                            "tab"       : "ike_policy",
+                            "template"  : "templates/ike_policy.html"
+                        },
+                        {
+                            "label"    	: "Transform  Policiy",
+                            "tab"       : "transform_policy",
+                            "template"  : "templates/transform_policy.html"
+                        }
+                    ]
+                    ]
+    		},
+                {
+                    "label"     : "VPN Passthrough",
+                    "tab"       : "vpn_passthrough",
+                    "template"  : "templates/vpn_passthrough.html"
+                }
+            ]
+        },
+        {
+            "label"     : "Firewall",
+            "tab"       : "firewall",
+            "panel"     : [
+                {
+                    "label"     : "Ruels",
+                    "tab"       : "rules",
+                    "template"  : "templates/rules.html",
+                    "form"    	: "forms/rule.html"
+                },
+                {
+                    "label"     : "NAT",
+                    "tab"       : "nat",
+                    "panel"     : [
+                        {
+                            "label"     : "Dynamic PAT",
+                            "tab"       : "dynamic_pat",
+                            "template"  : "templates/dynamic_pat.html",
+                            "form"    	: "forms/dynamic_pat.html"
+                        },
+                        {
+                            "label"     : "Static NAT",
+                            "tab"       : "static_nat",
+                            "template"  : "templates/static_nat.html",
+                            "form"    	: "forms/static_nat.html"
+                        },
+                        {
+                            "label"     : "Port Forwarding",
+                            "tab"       : "port_forwarding",
+                            "template"  : "templates/port_forwarding.html",
+                            "form"    	: "forms/port_forwarding.html"
+                        },
+                        {
+                            "label"     : "Port Trigger",
+                            "tab"       : "port_trigger",
+                            "template"  : "templates/port_trigger.html",
+                            "form"    	: "forms/port_trigger.html"
+                        },
+                        {
+                            "label"     : "Advanced NAT",
+                            "tab"       : "advanced_nat",
+                            "template"  : "templates/advanced_nat.html",
+                            "form"    	: "forms/advanced.html"
+                        },
+		    ]
+		},
+                {
+                    "label"     : "Session Settings",
+                    "tab"       : "session_settings",
+                    "template"  : "templates/session_settings.html",
+		},
+                {
+                    "label"     : "Attack Protection",
+                    "tab"       : "attack_protection",
+                    "template"  : "templates/attack_protection.html",
+		}
+            ]
+        },
+        {
+            "label"     : "Security",
+            "tab"       : "security",
+            "panel"     : [
+                {   
+                    "label"     : "AntiVirus",
+                    "tab"       : "antivirus",
+                    "template"  : "templates/antivirus.html",
+		    "form"	: "forms/antivirus.html'
+                }     
+            ]
+        },
+    	{
+    	    "label"	: "Users",
+    	    "tab"	: "users",
+    	    "panel"	: [
+                {       
+                    "label"     : "Users & Groups",   
+                    "tab"       : "users_and_groups",   
+                    "template"  : "templates/users_and_groups",
+		    "form"	: [
+			{
+			    "group"	: "forms/group.html",
+			    "local_user": "forms/local_user.html"
+		    	}
+		    ]
+                }       
+    	    ]
+    	},
+    	{
+    	    "label"	: "Device",
+    	    "tab"	: "device",
+    	    "panel"	: [
+                {       
+                    "label"     : "Administration",   
+                    "tab"       : "administration",   
+                    "panel"     : [     
+                        {
+                            "label"     : "Administrator Settings",   
+                            "tab"       : "administrator_settings",   
+                            "template"  : "templates/administrator_settings.html"
+                        }, 
+                        {
+                            "label"     : "Management Interface Settings",   
+                            "tab"       : "management_interface_settings",   
+                            "template"  : "templates/management_interface_settings.html",
+                            "form"  	: "forms/management_interface_settings.html"
+                        }, 
+                        {
+                            "label"     : "Email Alert",   
+                            "tab"       : "email_alert",   
+                            "template"  : "templates/email_alert.html"
+                        }, 
+                        {
+                            "label"     : "Backup/Restore",   
+                            "tab"       : "backup_restore",   
+                            "template"  : "templates/backup_restore.html"
+                        }, 
+                        {
+                            "label"     : "Firmware",   
+                            "tab"       : "firmware",   
+                            "template"  : "templates/firmware.html"
+                        }, 
+                        {
+                            "label"     : "Reboot/Reset/Shutdown",   
+                            "tab"       : "reboot_reset_shutdown",   
+                            "template"  : "templates/reboot_reset_shutdown.html"
+                        }, 
+                        {
+                            "label"     : "Properties",   
+                            "tab"       : "properties",   
+                            "template"  : "templates/properties.html"
+                        }
+                    ]       
+                },
+                {
+                    "label"     : "Date and Time",   
+                    "tab"       : "date_and_time",   
+                    "template"  : "templates/date_and_time.html"
+                },
+                {
+                    "label"     : "Loggings",
+                    "tab"       : "logggins",   
+                    "template"  : "templates/properties.html"
+                },
+                {       
+                    "label"     : "Objects",   
+                    "tab"       : "objects",   
+                    "panel"     : [     
+                        {
+                            "label"     : "Address",   
+                            "tab"       : "address",   
+                            "template"  : "templates/address.html",
+			    "form"	: [
+				{
+				    "group_address"	: "forms/group_address.html",
+				    "address"		: "forms/address.html"
+				}
+			    ]
+                        }, 
+                        {
+                            "label"     : "Service",   
+                            "tab"       : "service",   
+                            "template"  : "templates/service.html",
+			    "form"	: [
+				{
+				    "group_service"	: "forms/group_service.html",
+				    "service"		: "forms/service.html"
+				}
+			    ]
+			},
+                        {
+                            "label"     : "Schedules",   
+                            "tab"       : "schedules",   
+                            "template"  : "templates/schedules.html",
+			    "form"	: "forms/schedules.html",
+			}
+		    ]
+		},
+                {
+                    "label"     : "License",   
+                    "tab"       : "license",   
+                    "template"  : "templates/license.html"
+                }
+    	    ]
+    	}
+    ]
+}

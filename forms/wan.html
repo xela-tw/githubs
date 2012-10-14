@@ -1,0 +1,182 @@
+<div class="dialogForm">
+    <form id="form-wan" class="templateForm">
+        <div class="tabs">
+            <ul>
+                <li id="tab-basic_settings"><a href="#panel-basic_settings">Basic Settings</a></li>
+                <li id="tab-multiple_wan_settings"><a href="#panel-multiple_wan_settings">Multiple Wan Settings</a></li>
+                <li id="tab-ipv6"><a href="#panel-ipv6">IPv6</a></li>
+            </ul>
+            <div id="panel-basic_settings" class="labelDiv">
+		<div id="div-basic_settings">
+                <table id="table-basic_settings" class="">
+                    <tr>
+                        <th class="BT3 alignLeft">WAN Name</th>
+                        <td class="alignLeft"><p id="wanIpIfT-name"></p></td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft">Port Setting</th>
+                        <td class="alignLeft"><select id="wanIpIfT-portId"></select></td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft">Zone</th>
+                        <td class="alignLeft"><select id="wanIpIfT-zoneId"></select></td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft">IP Assignment Method</th>
+                        <td class="alignLeft"><select id="wanIpIfT-wanProto"></select></td>
+                    </tr>
+                    <tr class="wanIpIfT-wanProto-0">
+                        <th class="BT3 alignRight">IP Address</th>
+                        <td class="alignLeft"><input type="text" id="staticipT-ip" /></td>
+                    </tr>
+                    <tr class="wanIpIfT-wanProto-0">
+                        <th class="BT3 alignRight">Subnet Mask</th>
+                        <td class="alignLeft"><input type="text" id="staticipT-netmask" /></td>
+                    </tr>
+                    <tr class="wanIpIfT-wanProto-0">
+                        <th class="BT3 alignRight">Gateway</th>
+                        <td class="alignLeft"><input type="text" id="staticipT-gateway" /></td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft">MTU</th>
+                        <td class="alignLeft"><input type="radio" id="mtuMode-0" name="mtuMode" value="0" /> Auto</td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft"></th>
+                        <td class="alignLeft"><input type="radio" id="mtuMode-1" name="mtuMode" value="1" /> Manual</td>
+                    </tr>
+                    <tr class="mtuMode-1">
+                        <th class="BT3 alignLeft"></th>
+                        <td class="alignLeft">MTU Value <input type="text" id="mtu" /></td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft">DNS</th>
+                        <td class="alignLeft"><input type="radio" id="dnsMode-0" name="dnsMode" value="0" /> Auto</td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft"></th>
+                        <td class="alignLeft"><input type="radio" id="dnsMode-1" name="dnsMode" value="1" /> Manual</td>
+                    </tr>
+                    <tr class="dnsMode-1">
+                        <th class="BT3 alignLeft"></th>
+                        <td class="alignLeft">DNS1 <input type="text" id="userDns1" /></td>
+                    </tr>
+                    <tr class="dnsMode-1">
+                        <th class="BT3 alignLeft"></th>
+                        <td class="alignLeft">DNS2 <input type="text" id="userDns2" /></td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft">MAC Address</th>
+                        <td class="alignLeft"><input type="radio" id="macCloneEnable-0" name="macCloneEnable" value="0" /> Auto</td>
+                    </tr>
+                    <tr>
+                        <th class="BT3 alignLeft"></th>
+                        <td class="alignLeft"><input type="radio" id="macCloneEnable-1" name="macCloneEnable" value="1" /> Manual</td>
+                    </tr>
+                    <tr class="macCloneEnable-1">
+                        <th class="BT3 alignLeft"></th>
+			<td class="alignLeft"><input type="text" id="macClone" />
+		    </tr>
+                </table>
+		</div>
+		<div><p>IP Alias</p></div>
+		<div id="div-ip_alias" class="tableDiv">
+                <table id="table-ip_alias" class="Create">
+               	    <thead>
+               		<tr>
+                      	<th id="ipAliasT-address">Address</th>
+                      	<th id="ipAliasT-netmask">Netmask</th>
+                      	<th class="Edit Delete BT2">Action</th>
+               		</tr>
+                    </thead>
+                </table>
+		</div>
+            </div>
+	    <div id="panel-multiple_wan_settings" class="labelDiv">
+		<div id="div-multiple_wan_settings">
+		    <table id="table-multiple_wan_settings">
+			<tr>
+		        <td class="alignLeft Fixed100">Weight</td>
+                        <td class="alignLeft">
+				<select id="wanIpIfT-weight">
+                                <option value="90">Very High</option>
+                                <option value="70">High</option>
+                                <option value="50">Average</option>
+                                <option value="30">Low</option>
+                                <option value="10">Very Low</option>
+				</select>
+			</td>
+			</tr>
+
+			<tr>
+			<td class="alignLeft Fixed100"><input type="checkbox" id="wanIpIfT-netDetectEnable" value="1"/> Detect Link By</td>
+		       	<td class="alignLeft"></td>
+			</tr>
+
+			<tr>
+			<td class="alignRight Fixed100"><input class="wanIpIfT-netDetectEnable-checked" type="radio" name="wanIpIfT-netDetectMethod" value="0" id="wanIpIfT-netDetectMethod-0" /></td>
+			<td class="alignLeft"> Ping</td>
+			</tr>
+
+			<tr>
+			<td class="Fixed100"></td>
+			<td class="alignLeft">Target Address <select class="wanIpIfT-netDetectEnable-checked Chains wanIpIfT-netDetectMethod-0" id="wanIpIfT-netDetectPingIpId"><option value="0">-- Default Gateway --</option></td>
+			</tr>
+		
+			<tr>
+			<td class="Fixed100 alignRight"><input class="wanIpIfT-netDetectEnable-checked" type="radio" name="wanIpIfT-netDetectMethod" value="1" id="wanIpIfT-netDetectMethod-1" /></td>
+			<td class="alignLeft"> DNS Query</td>
+			</tr>
+
+			<tr>
+			<td class="Fixed100"></td>
+			<td class="alignLeft">Target Address <select class="wanIpIfT-netDetectEnable-checked Chains wanIpIfT-netDetectMethod-1" id="wanIpIfT-netDetectDnsIpId"><option value="0"> -- Default DNS Server -- </option></select></td>
+			</tr>
+
+
+			<tr>
+			<td class="alignLeft Fixed100"><input type="checkbox" id="wanIpIfT-failoverEnable" value="1" /> If Link Fails,</td>
+			<td class="alignLeft">Activate <select class="wanIpIfT-failoverEnable-checked" id="wanIpIfT-backupWanName"></select></td>
+			</tr>
+		    </table>
+		</div>
+	    </div>
+	    <div id="panel-ipv6" class="labelDiv">
+		<div id="div-ipv6">
+		    <table id="table-ipv6">
+			<tr>
+			    <td class="alignLeft Fixed150">IP Address Assignment</td>
+			    <td class="alignLeft">
+				<select id="wanIpIfT-wanProto_v6">
+				<option value="0">Static IP</option>
+				<option value="1">SLAAC</option>
+				</select>
+			    </td>
+			</tr>
+			<tr class="wanIpIfT-wanProto_v6-0">
+			    <td class="alignRight Fixed150">IPv6 Address</td>
+			    <td class="alignLeft"><input type="text" id="wanIpIfT-wanProto_v6-0-ip" /></td>
+			</tr>
+			<tr class="wanIpIfT-wanProto_v6-0">
+			    <td class="alignRight Fixed150">IPv6 Prefix Length</td>
+			    <td class="alignLeft"><input type="text" id="wanIpIfT-wanProto_v6-0-prefix" /></td>
+			</tr>
+			<tr class="wanIpIfT-wanProto_v6-0">
+			    <td class="alignRight Fixed150">Default IPv6 Gateway</td>
+			    <td class="alignLeft"><input type="text" id="wanIpIfT-wanProto_v6-0-gateway" /></td>
+			</tr>
+			<tr class="wanIpIfT-wanProto_v6-0">
+			    <td class="alignRight Fixed150">Primary DNS Server</td>
+			    <td class="alignLeft"><input type="text" id="wanIpIfT-wanProto_v6-0-userDns1" /></td>
+			</tr>
+			<tr class="wanIpIfT-wanProto_v6-0">
+			    <td class="alignRight Fixed150">Secondary DNS Server</td>
+			    <td class="alignLeft"><input type="text" id="wanIpIfT-wanProto_v6-0-userDns2" /></td>
+			</tr>
+		    </table>
+		</div>
+	    </div>
+        </div>
+    </form>
+</div>
+

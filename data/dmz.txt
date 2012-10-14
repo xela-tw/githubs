@@ -1,0 +1,19 @@
+{ "ajaxData": [
+        {
+	"name"		: "DMZ",
+	"vid"		: "4",
+	"dhcp_pool"	: "192.168.100.100 - 192.168.100.200",
+	"address"	: "192.168.199.1",
+	"physical_port"	: "GE6",
+	"mac_address"	: "00:11:22:33:44:66",
+	"zone"		: "DMZ",
+	"link_status"	: "On",
+	"tx_pkts"	: "4234",
+	"rx_pkts"	: "34",
+	"collisions"	: "",
+	"tx_b_s"	: "32",
+	"rx_b_s"	: "231",
+	"up_time"	: "21 hours"
+	}
+    ]
+}

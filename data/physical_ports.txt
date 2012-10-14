@@ -1,0 +1,59 @@
+{ "ajaxData": [
+        {
+	"portPort"		: "1",
+	"portName"		: "GE1",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Up"
+	},
+        {
+	"portPort"		: "2",
+	"portName"		: "GE2",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Down"
+	},
+        {
+	"portPort"		: "3",
+	"portName"		: "GE1",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Up"
+	},
+        {
+	"portPort"		: "4",
+	"portName"		: "GE4",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Up"
+	},
+        {
+	"portPort"		: "5",
+	"portName"		: "GE5",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Up"
+	},
+        {
+	"portPort"		: "6",
+	"portName"		: "GE6",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Up"
+	},
+        {
+	"portPort"		: "7",
+	"portName"		: "GE7",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Down"
+	},
+        {
+	"portPort"		: "8",
+	"portName"		: "GE8",
+	"portSpeed"		: "100M",
+	"portDuplex"	: "Full",
+	"portLink"		: "Down"
+	}
+    ]
+}

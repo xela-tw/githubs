@@ -1,0 +1,10 @@
+{
+    "userListT":
+	[
+	{"gid":"2101","name":"userA","password":"1OTdkMmNmZA==","groupId":"1503","cgiSetPwd":"0","cgiAction":"0"},
+	{"gid":"2102","name":"userB","password":"1OTdkMmNmZA==","groupId":"1502","cgiSetPwd":"0","cgiAction":"0"},
+	{"gid":"2103","name":"userC","password":"1OTdkMmNmZA==","groupId":"1501","cgiSetPwd":"0","cgiAction":"0"},
+	{"gid":"2104","name":"userD","password":"1OTdkMmNmZA==","groupId":"1504","cgiSetPwd":"0","cgiAction":"0"},
+	{"gid":"2105","name":"userE","password":"1OTdkMmNmZA==","groupId":"1502","cgiSetPwd":"0","cgiAction":"0"}
+	]
+}

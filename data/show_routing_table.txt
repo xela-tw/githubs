@@ -1,0 +1,27 @@
+{ "ajaxData": [
+        {
+	"destination_address"	: "192.168.1.100",
+	"subnet_mask"		: "255.255.255.0",
+	"gateway"		: "192.168.1.1",
+	"flag"			: "Reachable",
+	"metric"		: "0",
+	"interface"		: "GE2"
+	},
+        {
+	"destination_address"	: "192.168.1.101",
+	"subnet_mask"		: "255.255.255.0",
+	"gateway"		: "192.168.1.1",
+	"flag"			: "Reachable",
+	"metric"		: "0",
+	"interface"		: "GE3"
+	},
+        {
+	"destination_address"	: "192.168.1.110",
+	"subnet_mask"		: "255.255.255.0",
+	"gateway"		: "192.168.1.1",
+	"flag"			: "Reachable",
+	"metric"		: "0",
+	"interface"		: "GE4"
+	}
+    ]
+}

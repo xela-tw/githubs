@@ -1,0 +1,8 @@
+{ "ajaxData": [
+        {
+	"default_from_zone"	: "1",
+	"default_to_zone"	: "2",
+	"default_policy"	: "3"
+	}
+    ]
+}

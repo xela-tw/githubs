@@ -1,0 +1,41 @@
+<div class="dialogForm">
+    <form id="form-management_interface_settings" class="templateForm">
+        <div class="labelDiv">
+            <div>
+                <label for="interface">Interface</label>
+                    <select id="form-interface">
+                        <option value="Existing">Select From Existing Interface List</option>
+                    </select>
+            </div>
+	    <div>
+		    <input type="checkbox" id="form-ping" />
+                <label for="ping">Ping</label>
+	    </div>
+	    <div>
+
+		    <input type="checkbox" id="form-http" />
+                <label for="http">HTTP</label>
+	    </div>
+	    <div>
+		    <input type="checkbox" id="form-https" />
+                <label for="https">HTTPS</label>
+	    </div>
+	    <div>
+		    <input type="checkbox" id="form-ssh" />
+                <label for="ssh">SSH</label>
+	    </div>
+	    <div>
+                <label for="allowAccess">Allow Access</label>
+                    <select id="allowAccess">
+			<option> -- Allow Access -- </option>
+			<option value="All">All</option>
+                        <option value="Create">Create New Address</option>
+                        <option value="Create Group">Create New Group Address</option>
+                        <option value="Existing">Select From Existing Address</option>
+                        <option value="Existing Group">Select From Existing Group Address</option>
+		    </select>
+	    </div>
+        </div>
+    </form>
+</div>
+

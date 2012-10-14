@@ -1,0 +1,51 @@
+{ "ajaxData": [
+        {
+	"vlanName"		: "LAN1",
+	"vlanVid"		: "1",
+	"vlanDhcpPool"	: "192.168.1.100 - 192.168.1.200",
+	"vlanAddress"	: "192.168.1.1",
+	"vlanPhysicalPort"	: "GE3,GE4,GE5",
+	"vlanMacAddress"	: "00:11:22:33:44:55",
+	"vlanZone"		: "LAN",
+	"vlanLinkStatus"	: "On",
+	"vlanTxPkts"	: "12434",
+	"vlanRxPkts"	: "43",
+	"vlanCollisions"	: "",
+	"vlanTxBS"	: "3213213",
+	"vlanRxBS"	: "3132134",
+	"vlanUpTime"	: "5 days"
+	},
+        {
+	"vlanName"		: "LAN2",
+	"vlanVid"		: "2",
+	"vlanDhcpPool"	: "192.168.2.50 - 192.168.2.100",
+	"vlanAddress"	: "192.168.2.1",
+	"vlanPhysicalPort"	: "GE7",
+	"vlanMacAddress"	: "00:11:11:11:11:11",
+	"vlanZone"		: "GUEST",
+	"vlanLinkStatus"	: "On",
+	"vlanTxPkts"	: "321",
+	"vlanRxPkts"	: "21",
+	"vlanCollisions"	: "231",
+	"vlanTxBS"	: "12",
+	"vlanRxBS"	: "23",
+	"vlanUpTime"	: "24 minutes"
+	},
+        {
+	"vlanName"		: "LAN3",
+	"vlanVid"		: "3",
+	"vlanDhcpPool"	: "Disabled",
+	"vlanAddress"	: "192.168.3.1",
+	"vlanPhysicalPort"	: "GE8",
+	"vlanMacAddress"	: "00:22:22:22:22:22",
+	"vlanZone"		: "VOICE",
+	"vlanLinkStatus"	: "On",
+	"vlanTxPkts"	: "12434",
+	"vlanRxPkts"	: "34",
+	"vlanCollisions"	: "",
+	"vlanTxBS"	: "32",
+	"vlanRxBS"	: "23",
+	"vlanUpTime"	: "21 hours"
+	}
+    ]
+}

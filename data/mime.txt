@@ -1,0 +1,15 @@
+{ "ajaxData": [
+        {
+	"mime"	: "helo",
+	"exception"	: "world"
+	},
+        {
+	"mime"	: "ahlo",
+	"exception"	: "world"
+	},
+        {
+	"mime"	: "well",
+	"exception"	: "world"
+	}
+    ]
+}

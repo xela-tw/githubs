@@ -1,0 +1,27 @@
+<div id="template-affected_host" class="templateDiv">
+    <div class="criterion">
+	<fieldset>
+	    <legend>Period</legend>
+	    <b>Start Date: </b><input type="text" class="query-start" />
+	    <b>End Date: </b><input type="text" class="query-end" />
+	    <b>Aggregate By</b>	
+	    <select class="query-select">
+		<option value="None">None</option>
+		<option value="Host IP">Host IP</option>
+	    </select>
+	    <button class="query-button">Query</button>
+	</fieldset>
+    </div>
+    <div id="div-affected_host" class="tableDiv">
+	<table id="table-affected_host">
+	    <thead>
+		<tr>
+		<th id="hostIpUser">Host IP/User</th>
+		<th id="virusHitCounts">Virus Hit Counts</th>
+		<th id="signatureHitCounts">Signature Hit Counts</th>
+		<th id="date">Date</th>
+		</tr>
+	    </thead>
+	</table>
+    </div>
+</div>

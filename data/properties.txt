@@ -1,0 +1,4 @@
+{
+    "hostname"	: "archer215343",
+    "domainname": "archer.com"
+}

@@ -1,0 +1,15 @@
+{ 
+ "guiPortIpIfTNum":"2",
+ "guiPortIpIfT":[
+ {
+ "gid":"1000",
+ "name":"GE1",
+ "type":"0"
+ },
+ {
+ "gid":"1001",
+ "name":"GE2",
+ "type":"1"
+ }
+ ]
+}

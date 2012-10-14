@@ -1,0 +1,30 @@
+<div id="template-blocked_host" class="templateDiv">
+    <div class="criterion">
+	<fieldset>
+	    <legend>Period</legend>
+	    <b>Start Date: </b><input type="text" class="query-start" />
+	    <b>End Date: </b><input type="text" class="query-end" />
+	    <b>Aggregate By</b>	
+	    <select class="query-select">
+		<option value="None">None</option>
+		<option value="Host IP/User">Host IP/User</option>
+	    </select>
+	    <button class="query-button">Query</button>
+	</fieldset>
+    </div>
+    <div id="div-blocked_host" class="tableDiv">
+	<table id="table-blocked_host">
+	    <thead>
+		<tr>
+		    <th id="hostIpUser" rowspan="2">Host IP/User</th>
+		    <th class="Colspans" colspan="2">Block Counts</th>
+		    <th id="date" rowspan="2">Date</th>
+		</tr>
+		<tr>
+		    <th id="virus">Virus</th>
+		    <th id="firewall">Firewall</th>
+		</tr>
+	    </thead>
+	</table>
+    </div>
+</div>

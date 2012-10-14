@@ -1,0 +1,130 @@
+<div id="template-email_alert"  class="templateDiv">
+    <div class="tabs">
+	<ul>
+	    <li id="tab-settings"><a href="#panel-settings">Settings</a></li>
+	    <li id="tab-alerts"><a href="#panel-alerts">Alerts</a></li>
+	</ul>
+	<div id="panel-settings" class="panelDiv">
+	    <div id="div-settings" class="labelDiv Confirm">
+	    <form id="form-settings">
+		    <label for="smtpServer">SMTP Server</label>
+		<div>
+		    <input type="text" id="smtpServer" />
+		</div>
+		    <label for="port">Port</label>
+		<div>
+			<select id="port">
+			<option valu="25">25</option>
+			<option valu="465">465</option>
+			<option valu="587">587</option>
+			</select>
+		</div>
+		    <label for="sourceConnectivityMethod">Source Connectivity Method</label>
+		<div>
+			<select id="sourceConnectivityMethod">
+			<option valu="TLS">TLS</option>
+			<option valu="SSL">SSL</option>
+			<option valu="None">None</option>
+			</select>
+		    
+		</div>
+		    <label for="smtpAuthenicationEnable">SMTP Authenication Enable</label>
+		<div>
+		    <input type="checkbox" id="smtpAuthenicationEnable" />
+		</div>
+		    <label for="account">Account</label>
+		<div>
+		    <input type="text" id="account" />
+		</div>
+		    <label for="password">Password</label>
+		<div>
+		    <input type="password" id="password" />
+		</div>
+		    <label for="fromEmailAddress">From Email Address</label>
+		<div>
+		    <input type="text" id="fromEmailAddress" />
+		</div>
+		    <label for="toEmailAddress">To Email Address</label>
+		<div>
+		    <input type="text" id="toEmailAddress" />
+	        </div>
+	    </form>
+	    </div>
+	</div>
+	<div id="panel-alerts" class="panelDiv">
+	    <div id="div-alerts" class="labelDiv Confirm">
+		<form id="form-alerts">
+		<div id="div-systems" class="tableDiv">
+		    <table id="table-systems" class="Complex">
+			<caption>Systems</caption>
+			<tr>
+			    <th class="TH1">CPU Overload Alert</th>
+			    <td class="TD1"><input type="checkbox" id="cpuOverloadAlert" /></td>
+			    <th class="TH2">CPU Threshold Settings</th>
+			    <td class="TD2"><input type="text" id="cpuThresholdSettings" /></td>
+			</tr>
+			<tr>
+			    <th class="TH1">New Firmware Alert</th>
+			    <td class="TD1"><input type="checkbox" id="newFirmwareAlert" /></td>
+			    <th class="TH2"></th>
+			    <td class="TD2"></td>
+			</tr>
+			<tr>
+			    <th class="TH1">Syslog Email</th>
+			    <td class="TD1"><input type="checkbox" id="syslogEmail" /></td>
+			    <th class="TH2"></th>
+			    <td class="TD2"></td>
+			</tr>
+			<tr>
+			    <th class="TH1">System Restart Alert</th>
+			    <td class="TD1"><input type="checkbox" id="systemRestartAlert" /></td>
+			    <th class="TH2"></th>
+			    <td class="TD2"></td>
+			</tr>
+			<tr>
+			    <th class="TH1">Failed Administartor Login Alert</th>
+			    <td class="TD1"><input type="checkbox" id="failedAdministratorLoginAlert" /></td>
+			    <th class="TH2"></th>
+			    <td class="TD2"></td>
+			</tr>
+			<tr>
+			    <th class="TH1">Disk Filling Up Alert</th>
+			    <td class="TD1"><input type="checkbox" id="diskFillingUpAlert" /></td>
+			    <th class="TH2">When System Fill Up Data %</th>
+			    <td class="TD2"><input type="text" id="whenSystemFillUpData" /></td>
+			</tr>
+		    </table>
+		</div>
+		<div id="div-networks" class="tableDiv">
+		    <table id="table-networks" class="Complex">
+			<caption>Networks</caption>
+			<tr>
+			    <th class="TH1">Site-to-Site VPN Up/Down Alert</th>
+			    <td class="TD1"><input type="checkbox" id="siteToSiteVpnUpDownAlert" /></td>
+			    <th class="TH2"></th>
+			    <td class="TD2"></td>
+			</tr>
+			<tr>
+			    <th class="TH1">WAN Up/Down Alert</th>
+			    <td class="TD1"><input type="checkbox" id="wanUpDownAlert" /></td>
+			    <th class="TH2">Alert Interval</th>
+			    <td class="TD2"><input type="text" id="wanAlertInterval" /></td>
+			</tr>
+		    </table>
+		</div>
+		<div id="div-security" class="tableDiv">
+		    <table id="table-security" class="Complex">
+			<caption>Security Threat and Prevention</caption>
+			<tr>
+			    <th class="TH1">Anti-Virus Alert</th>
+			    <td class="TD1"><input type="checkbox" id="antivirusAlert" /></td>
+			    <th class="TH2">Alert Interval</th>
+			    <td class="TD2"><input type="text" id="antivirusAlertInterval" /></td>
+			</tr>
+		    </table>
+		</div>
+	        </form>
+	    </div>
+	</div>
+    </div>
+</div>

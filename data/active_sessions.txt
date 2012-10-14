@@ -1,0 +1,11 @@
+{ "ajaxData": [
+        {
+	"name"		: "Peter",
+	"vpnType"	: "site-to-site",
+	"wanInterface"	: "WAN1",
+	"remoteGateway"	: "WAN1",
+	"localNetwork"	: "WAN1",
+	"remoteNetwork"	: "WAN1"
+	}
+    ]
+}

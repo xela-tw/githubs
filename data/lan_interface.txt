@@ -1,0 +1,33 @@
+{ "ajaxData": [
+        {
+	"lanIndex"	: "1",
+	"lanName"	: "LAN1",
+	"lanDhcpMode"	: "DHCP Server",
+	"lanIpAddress"	: "192.168.1.1"
+	},
+        {
+	"lanIndex"	: "2",
+	"lanName"	: "LAN2",
+	"lanDhcpMode"	: "DHCP Server",
+	"lanIpAddress"	: "192.168.2.1"
+	},
+        {
+	"lanIndex"	: "3",
+	"lanName"	: "LAN3",
+	"lanDhcpMode"	: "DHCP Server",
+	"lanIpAddress"	: "192.168.3.1"
+	},
+        {
+	"lanIndex"	: "4",
+	"lanName"	: "LAN4",
+	"lanDhcpMode"	: "Disabled",
+	"lanIpAddress"	: "192.168.4.1"
+	},
+        {
+	"lanIndex"	: "5",
+	"lanName"	: "LAN5",
+	"lanDhcpMode"	: "DHCP Relay",
+	"lanIpAddress"	: "10.1.1.1"
+	}
+    ]
+}

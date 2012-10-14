@@ -1,0 +1,138 @@
+<div class="dialogForm">
+    <form id="form-ipsec_policies" class="templateForm">
+        <div class="tabs">
+            <ul>
+                <li id="tab-basic_settings"><a href="#panel-basic_settings">Basic Settings</a></li>
+                <li id="tab-advance_settings"><a href="#panel-advance_settings">Advance Settings</a></li>
+                <li id="tab-vpn_failover"><a href="#panel-vpn_failover">VPN Failover</a></li>
+            </ul>
+            <div id="panel-basic_settings">
+		<div id="div-basic_settings" class="tableDiv">
+		    <table id="table-basic_settings" >
+			<tr>
+			    <th class="alignLeft Fixed150">Description</th>
+			    <td class="alignLeft"><input type="text" id="ipsec_policies-name" /></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150">Enable</th>
+			    <td class="alignLeft"><input type="checkbox" id="ipsec_policies-enable" value="1" /></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150">Remote Type</th>
+			    <td class="alignLeft">
+				<select id="ipsec_policies-remoteGwType"></select>
+			    </td>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150">Remote Address</th>
+			    <td class="alignLeft"><input class="ipsec_policies-remoteGwType" type="text" id="ipsec_policies-remoteGw" /></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft" colspan="2">Authenication Method</th>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150"><input type="radio" name="phase1AuthType" id="phase1AuthType-0" value="0" /><label for="phase1AuthType-0">  Phrase Key<label></th>
+			    <td class="alignLeft"><input type="text" id="ipsec_policies-presharedkey" /> (length:1~256)</td>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150">Wan Interface</th>
+			    <td class="alignLeft"><select id="ipsec_policies-wanId"></select></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150">Local Network</th>
+			    <td class="alignLeft"><select id="ipsec_policies-localNetworkId"></select></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft Fixed150">Remote Network</th>
+			    <td class="alignLeft"><select id="ipsec_policies-remoteNetworkId"></select></td>
+			</tr>
+		    </table>
+		</div>
+            </div>
+	    <div id="panel-advance_settings">
+                <div id="div-advance_settings" class="tableDiv">
+		    <div>
+		    <table id="table-advance_settings">
+			<tr>
+			    <th class="alignLeft  Fixed150">FPS</th>
+			    <td class="alignLeft"><input type="checkbox" id="ipsec_policies-pfsEnable" value="1" /></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft  Fixed150">DPD</th>
+			    <td class="alignLeft"><input type="checkbox" id="ipsec_policies-dpdEnable" value="1" /></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft  Fixed150">Delay Time</th>
+			    <td class="alignLeft"><input class="ipsec_policies-dpdEnable-checked" type="text" id="ipsec_policies-dpddelay" /> (10~300)</td>
+			</tr>
+			<tr>
+			    <th class="alignLeft  Fixed150">Detection Timeout</th>
+			    <td class="alignLeft"><input class="ipsec_policies-dpdEnable-checked" type="text" id="ipsec_policies-dpdtimeout" /> (30~1800)</td>
+			</tr>
+			<tr>
+			    <th class="alignLeft  Fixed150">DPD Action</th>
+			    <td class="alignLeft">
+				<select class="ipsec_policies-dpdEnable-checked" id="ipsec_policies-dpdaction"></select>
+			    </td>
+			</tr>
+			<tr>
+			    <th class="alignLeft  Fixed150">IKE Policy</th>
+			    <td class="alignLeft"><select id="ipsec_policies-ikePolicyId"></select></td>
+			</tr>
+			<tr>
+			    <th class="alignLeft  Fixed150">Transform</th>
+			    <td class="alignLeft"><select id="ipsec_policies-transformPolicyId"></select></td>
+			</tr>
+		    </table>
+		    
+		    </div>
+		    <div class="ifAccessControl">
+			<h4>Access Control</h4>
+			<div id="div-access_control" class="tableDiv">
+			    <table id="table-access_control" class="Fixed350">
+				<thead>
+				    <tr>
+				    	<th class="Fixed200" id="access_control-zoneName">To Zone List</th>
+				    	<th class="selectCol" id="access_control-actionType">Access Setting</th>
+				    </tr>
+				</thead>
+				<tbody>
+				    <tr>
+					<td colspan="2" id="td-access_control">
+					    <div id="sub-div-access_control">
+					    	<table id="sub-table-access_control"><tbody></tbody></table>
+					    </div>
+					</td>
+				    </tr>
+				</tbody>
+			    </table>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	    <div id="panel-vpn_failover">
+                <div id="div-vpn_failover" class="tableDiv">
+		    <table id="table-vpn_faliover">
+                        <tr>
+			    <th class="alignLeft  Fixed150">WAN Failover Enable</th>
+			    <td class="alignLeft"><input type="checkbox" id="ipsec_policies-wanFailoverEnable" value="1" /></td>
+		        </tr>
+                        <tr>
+			    <th class="alignLeft  Fixed150">Redundant Gateway</th>
+			    <td class="alignLeft"><input type="checkbox" id="ipsec_policies-backupPolicyEnable" value="1" /></td>
+			</tr>
+			<tr>
+		            <th class="alignLeft  Fixed150">Select Backup Policy</th>
+                            <td class="alignLeft"><select class="ipsec_policies-backupPolicyEnable-checked" id="ipsec_policies-backupPolicyName"></select></td>
+			</tr>
+			<tr>
+		    	    <th class="alignLeft  Fixed150">Fallback Time to Switch From Backup to Primary</th>
+			    <td class="alignLeft"><input class="ipsec_policies-backupPolicyEnable-checked" type="text" id="ipsec_policies-fallbackTime" /> (3~59)</td>
+			</tr>
+		    </table>
+		</div>
+	    </div>
+        </div>
+    </form>
+</div>
+

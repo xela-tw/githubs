@@ -1,0 +1,51 @@
+{ "ajaxData": [
+        {
+	"name"		: "LAN1",
+	"vid"		: "1",
+	"dhcp_pool"	: "192.168.1.100 - 192.168.1.200",
+	"address"	: "192.168.1.1",
+	"physical_port"	: "GE3,GE4,GE5",
+	"mac_address"	: "00:11:22:33:44:55",
+	"zone"		: "LAN",
+	"link_status"	: "On",
+	"tx_pkts"	: "12434",
+	"rx_pkts"	: "43",
+	"collisions"	: "",
+	"tx_b_s"	: "3213213",
+	"rx_b_s"	: "3132134",
+	"up_time"	: "5 days"
+	},
+        {
+	"name"		: "LAN2",
+	"vid"		: "2",
+	"dhcp_pool"	: "192.168.2.50 - 192.168.2.100",
+	"address"	: "192.168.2.1",
+	"physical_port"	: "GE7",
+	"mac_address"	: "00:11:11:11:11:11",
+	"zone"		: "GUEST",
+	"link_status"	: "On",
+	"tx_pkts"	: "321",
+	"rx_pkts"	: "21",
+	"collisions"	: "231",
+	"tx_b_s"	: "12",
+	"rx_b_s"	: "23",
+	"up_time"	: "24 minutes"
+	},
+        {
+	"name"		: "LAN3",
+	"vid"		: "3",
+	"dhcp_pool"	: "Disabled",
+	"address"	: "192.168.3.1",
+	"physical_port"	: "GE8",
+	"mac_address"	: "00:22:22:22:22:22",
+	"zone"		: "VOICE",
+	"link_status"	: "On",
+	"tx_pkts"	: "12434",
+	"rx_pkts"	: "34",
+	"collisions"	: "",
+	"tx_b_s"	: "32",
+	"rx_b_s"	: "23",
+	"up_time"	: "21 hours"
+	}
+    ]
+}

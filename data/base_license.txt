@@ -1,0 +1,11 @@
+{
+"licenseId"		: "123456",
+"registrationDate"	: "01/01/2013",
+"licenseRevision"	: "what's this?",
+"special"		: "you're not special",
+"type"			: "demo",
+"model"			: "super",
+"maxUsers"		: "256",
+"maxConnections"	: "256"
+
+}

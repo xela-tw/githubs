@@ -1,0 +1,21 @@
+{ "ajaxData": [
+        {
+	"ip_address"	: "192.168.1.100",
+	"flag"		: "Reachable",
+	"mac_address"	: "00:11:22:33:44:55",
+	"device"	: "GE2"
+	},
+        {
+	"ip_address"	: "192.168.1.101",
+	"flag"		: "STALE",
+	"mac_address"	: "00:11:22:33:44:56",
+	"device"	: "GE3"
+	},
+        {
+	"ip_address"	: "10.1.1.20",
+	"flag"		: "Reachable",
+	"mac_address"	: "00:11:22:33:23:32",
+	"device"	: "GE7"
+	}
+    ]
+}

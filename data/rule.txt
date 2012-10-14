@@ -1,0 +1,17 @@
+{ "ajaxData": [
+        {
+	"priority"	: "1",
+	"enable"	: "Y",
+	"from_zone"	: "0",
+	"to_zone"	: "1",
+	"services_application"	: "0",
+	"url"		: "2",
+	"source_address_user"	: "3",
+	"destination_address_user"	: "4",
+	"schedule"	: "5",
+	"hit_count"	: "6",
+	"log"		: "7",
+	"match_action"	: "8"
+	}
+    ]
+}

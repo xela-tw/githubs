@@ -1,0 +1,61 @@
+<div class="dialogForm">
+    <div id="dhcp_pool_settings" class="panelDiv">
+    <form id="form-dhcp_pool_settings" class="templateForm">
+        <div class="labelDiv">
+            <div>
+                <label for="dhcpMode">DHCP Mode</label>
+                    <select id="dhcpMode">
+                        <option value="dhcpServer">DHCP Server</option>
+                        <option value="dhcpRelay">DHCP Relay</option>
+                        <option value="disabled">Disabled</option>
+                    </select>
+                <div class="dhcpMode-dhcpServer">
+                    <div>
+                        <label for="startipAddress">Start IP Address</label>
+                        <input type="text" id="startIpAddress" />
+                    </div>
+                    <div>
+                        <label for="endIpAddress">End IP Address</label>
+                        <input type="text" id="endIpAddress" />
+                    </div>
+                    <div>
+                        <label for="leaseTime">Lease Time</label>
+                        <input type="text" id="leaseTime" />
+                    </div>
+                    <div>
+                        <label for="gateway">Gateway</label>
+                        <input type="text" id="gateway" />
+                    </div>
+                    <div>
+                        <label for="dns1">DNS1</label>
+                        <input type="text" id="dns1" />
+                    </div>
+                    <div>
+                        <label for="dns2">DNS2</label>
+                        <input type="text" id="dns2" />
+                    </div>
+                    <div>
+                        <label for="wins1">WINS1</label>
+                        <input type="text" id="wins1" />
+                    </div>
+                    <div>
+                        <label for="wins2">WINS2</label>
+                        <input type="text" id="wins2" />
+                    </div>
+                    <div>
+                        <label for="domainName">Domain Name</label>
+                        <input type="text" id="domainName" />
+                    </div>
+                </div>
+		<div class="dhcpMode-dhcpRelay">
+                    <div>
+                        <label for="dhcpRelay">DHCP Relay</label>
+                        <input type="text" id="dhcpRelay" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+

@@ -1,0 +1,121 @@
+<div class="dialogForm">
+    <form id="form-dmz" class="templateForm">
+        <div class="tabs">
+            <ul>
+                <li id="tab-basic_settings"><a href="#panel-basic_settings">Basic Settings</a></li>
+                <li id="tab-dhcp_pool_settings"><a href="#panel-dhcp_pool_settings">DHCP Pool Settings</a></li>
+                <li id="tab-ipv6_settings"><a href="#panel-ipv6_settings">IPv6 Settings</a></li>
+            </ul>
+            <div id="panel-basic_settings">
+                <div class="labelDiv">
+		    <div>
+			<label for="name">Name</label>
+			<input type="text" id="name" value="" />
+		    </div>
+		    <div>
+			<label for="ipAddress">IP Address</label>
+			<input type="text" id="ipAddress" value="" />
+		    </div>
+		    <div>
+			<label for="netmask">Netmask</label>
+			<input type="text" id="netmask" value="" />
+		    </div>
+		    <div>
+			<label for="spanningTree">Spanning Tree</label>
+			<input type="text" id="spanningTree" value="" />
+		    </div>
+		    <div>
+			<label for="portSettings">Port Settings</label>
+			<input type="text" id="portSettings" value="" />
+		    </div>
+                    <div>
+                        <label for="zone">Zone</label>
+                            <select id="zone">
+                                <option value="WAN">WAN</option>
+                                <option value="LAN">LAN</option>
+                                <option value="DMZ">DMZ</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label for="ipAlias">IP Alias</label>
+                            <select id="ipAlias">
+                                <option value="Create">Create New Address</option>
+                                <option value="Existing">Select From Existing Group</option>
+                                <option value="Create Group">Create New Group Address</option>
+                                <option value="Existing Group">Select From Existing Group Address</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+	    <div id="panel-dhcp_pool_settings">
+                <div class="labelDiv">
+                    <div>
+                        <label for="dhcpMode">DHCP Mode</label>
+                            <select id="dhcpMode">
+                                <option value="dhcpServer">DHCP Server</option>
+                                <option value="dhcpRelay">DHCP Relay</option>
+                                <option value="disabled">Disabled</option>
+			    </select>
+		   	<div id="dhcpMode-dhcpServer"> 
+		    	    <div>
+				<label for="startipAddress">Start IP Address</label>
+				<input type="text" id="startIpAddress" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="endIpAddress">End IP Address</label>
+				<input type="text" id="endIpAddress" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="leaseTime">Lease Time</label>
+				<input type="text" id="leaseTime" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="gateway">Gateway</label>
+				<input type="text" id="gateway" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="dns1">DNS1</label>
+				<input type="text" id="dns1" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="dns2">DNS2</label>
+				<input type="text" id="dns2" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="wins1">WINS1</label>
+				<input type="text" id="wins1" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="wins2">WINS2</label>
+				<input type="text" id="wins2" value="" />
+		    	    </div>
+		    	    <div>
+				<label for="domainName">Domain Name</label>
+				<input type="text" id="domainName" value="" />
+		    	    </div>
+			</div>
+		    	<div id="dhcpMode-dhcpRelay">
+			    <div>
+				<label for="dhcpRelay">DHCP Relay</label>
+				<input type="text" id="dhcpRelay" value="" />
+		    	    </div>
+			</div>
+		    </div>	
+		</div>
+	    </div>
+	    <div id="panel-ipv6_settings">
+                <div class="labelDiv">
+		    <div>
+                        <label for="ipv6Address">IPv6 Address</label>
+			<input type="text" id="ipv6Address" value="" />
+		    </div>
+		    <div>
+                        <label for="ipv6PrefixLength">IPv6 Prefix Length</label>
+			<input type="text" id="ipv6PrefixLength" value="" />
+		    </div>
+		</div>
+	    </div>
+        </div>
+    </form>
+</div>
+

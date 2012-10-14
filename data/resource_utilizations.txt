@@ -1,0 +1,6 @@
+{ 
+	"dramSize"		: "1024 Mbytes",
+	"flashSize"		: "256 Mbytes",
+	"cpuUtilization"	: "0.21",
+	"memoryUtilization"	: "0.42"
+}

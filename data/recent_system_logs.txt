@@ -1,0 +1,18 @@
+{ "ajaxData": [
+        {
+	"logsTime"		: "11:31AM",
+	"logsLevel"		: "Normal",
+	"logsDescription"	: "User \"Peter\" Lgoin in system"
+	},
+        {
+	"logsTime"		: "11:30AM",
+	"logsLevel"		: "Warning",
+	"logsDescription"	: "New firmware is available"
+	},
+        {
+	"logsTime"		: "11:29AM",
+	"logsLevel"		: "Error",
+	"logsDescription"	: "Fail to get DHCP address from WAN"
+	}
+    ]
+}

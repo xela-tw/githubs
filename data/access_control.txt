@@ -1,0 +1,31 @@
+{ "ajaxData": [
+        {
+	"toZoneList" 	: "1",
+	"accessSetting" : "1"
+	},
+        {
+	"toZoneList" 	: "2",
+	"accessSetting" : "0"
+	},
+        {
+	"toZoneList" 	: "3",
+	"accessSetting" : "1"
+	},
+        {
+	"toZoneList" 	: "4",
+	"accessSetting" : "0"
+	},
+        {
+	"toZoneList" 	: "5",
+	"accessSetting" : "1"
+	},
+        {
+	"toZoneList" 	: "6",
+	"accessSetting" : "0"
+	},
+        {
+	"toZoneList" 	: "7",
+	"accessSetting" : "0"
+	}
+    ]
+}

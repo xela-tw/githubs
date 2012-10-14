@@ -1,0 +1,70 @@
+<div class="extraForm">
+    <form id="form-schedules" class="templateForm">
+        <div class="labelDiv">
+	    <table id="table-scheduls" class="DualInput Fixed500">
+		<caption>Schedule</caption>
+		<tr>
+		    <td class="alignRight Fixed125"><em>*</em> Schedule Name: </td>
+		    <td class="alignLeft" ><input type="text" id="schedule-name" /></td>
+		</tr>
+		<tr>
+		    <td class="alignLeft" colspan="2">Schedule Days</td>
+		</tr>
+		<tr>
+		    <td colspan="2">Do you want this schedule to be active on all days or specific days?</td>
+		</tr>
+		<tr>
+		    <td class="alignRight">Days: </td>
+		    <td class="alignLeft"><select id="days"><option value="0">All Days</option><option value="1">Specific Day</option></select></td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day1" value="1" /></td>
+		    <td class="alignLeft">Monday</td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day2" value="2" /></td>
+		    <td class="alignLeft">Tuesday</td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day4" value="4" /></td>
+		    <td class="alignLeft">Wednesday</td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day8" value="8" /></td>
+		    <td class="alignLeft">Thursday</td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day16" value="16" /></td>
+		    <td class="alignLeft">Friday</td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day32" value="32" /></td>
+		    <td class="alignLeft">Saturday</td>
+		</tr>
+		<tr class="days-1">
+		    <td class="alignRight"><input type="checkbox" id="day64" value="64" /></td>
+		    <td class="alignLeft">Sunday</td>
+		</tr>
+		<tr>
+		    <td class="alignLeft" colspan="2">Schedule Time of Days</td>
+		</tr>
+		<tr>
+		    <td colspan="2">Do you want this schedule to be active at all times or a specific time?</td>
+		</tr>
+		<tr>
+		    <td class="alignRight">Times: </td>
+		    <td class="alignLeft" ><select id="times"><option value="0">All Times</option><option value="1">Specific Time</option></select></td>
+		</tr>
+		<tr class="times-1">
+		    <td class="alignRight">Start Time</td>
+		    <td class="alignLeft" ><select id="startHour"></select><select id="startMin"></select> ( hh:mm )</td>
+		</tr>
+		<tr class="times-1">
+		    <td class="alignRight">End Time</td>
+		    <td class="alignLeft" ><select id="endHour"></select><select id="endMin"></select> ( hh:mm )</td>
+		</tr>
+	    </table>
+	</div>
+    </form>
+</div>
+

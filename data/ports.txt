@@ -1,0 +1,15 @@
+{ "ajaxData": [
+        {
+	"port"		: "168",
+	"name"		: "Helo",
+	"enable"	: "True",
+	"portType"	: "WAN",
+	"vlan"		: "LAN1",
+	"pvid"		: "1",
+	"speed"		: "1000M",
+	"duplex"	: "Full",
+	"linkStatus"	: "On",
+	"flowControl"	: "Unkonw"
+	}
+    ]
+}

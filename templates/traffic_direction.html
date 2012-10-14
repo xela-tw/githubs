@@ -1,0 +1,29 @@
+<div id="template-traffic_direction" class="templateDiv">
+    <div class="criterion">
+	<fieldset>
+	    <legend>Period</legend>
+	    <b>Start Date: </b><input type="text" class="query-start" />
+	    <b>End Date: </b><input type="text" class="query-end" />
+	    <b>Aggregate By</b>	
+	    <select class="query-select">
+		<option value="None">None</option>
+		<option value="Zone Direction">Zone Direction</option>
+	    </select>
+	    <button class="query-button">Query</button>
+	</fieldset>
+    </div>
+    <div id="div-traffic_direction" class="tableDiv">
+	<table id="table-traffic_direction">
+	    <thead>
+		<tr>
+		<th id="fromZone">From Zone</th>
+		<th id="toZone">To Zone</th>
+		<th id="trafficAmount">Traffic Amount</th>
+		<th id="sessions">Sessions</th>
+		<th id="startDate">Start Date</th>
+		<th id="endDate">End Date</th>
+		</tr>
+	    </thead>
+	</table>
+    </div>
+</div>

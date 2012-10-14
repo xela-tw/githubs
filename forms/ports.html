@@ -1,0 +1,129 @@
+<div class="dialogForm">
+    <form id="form-port_configuration" class="templateForm">
+    <div class="tabs">
+	<ul>
+	    <li><a href="#panel-basic_settings">Basic Settings</a></li>
+	    <li><a href="#panel-dhcp_pool_settings">DHCP Pool Settings</a></li>
+	    <li><a href="#panel-ipv6_settings">Ipv6 Settings</a></li>
+	</ul>
+ 	<div id="panel-basic_settings">
+	    <div id="div-basic_settings" class="tableDiv">
+	    <table id="table-basic_settings">
+	    <tr>
+		<td class="alignLeft Fixed100"">Name</td>
+		<td class="alignLeft"><p id="ports-name" ></p></td>
+	    </tr>
+            <tr>
+                <td class="alignLeft Fixed100">IP Address</td>
+		<td class="alignLeft"><input type="text" id="ports-address" /></td>
+            </tr>
+            <tr>
+                <td class="alignLeft Fixed100">Netmask</td>
+		<td class="alignLeft"><input type="text" id="ports-netmask" /></td>
+            </tr>
+	    <tr>
+                <td class="alignLeft Fixed100">Speed</td>
+                <td class="alignLeft"><select id="ports-speed"></select></td>
+	    </tr>
+	    <tr>
+                <td class="alignLeft Fixed100">Duplex</td>
+                <td class="alignLeft"><select id="ports-duplex"></select></td>
+	    </tr>
+	    <tr>
+		<td class="alignRight Fixed100"><input type="checkbox" id="ports-flowControl" value="1" /></td>
+		<td class="alignLeft">Flow Control</td>
+	    </tr>
+	    <tr>
+		<td class="alignLeft Fixed100">MTU</td>
+		<td class="alignLeft"><input type="radio" id="ports-mtuMode-0" name="mtuMode" value="0" /> Auto</td>
+	    </tr>
+	    <tr>
+		<td class="alignRight Fixed100"></td>
+		<td class="alignLeft"><input type="radio" id="ports-mtuMode-1" name="mtuMode" value="1" /> Manual <input type="text" class="mtuMode-1" id="ports-mtuValue" /></td>
+	    </tr>
+	    <tr>
+                <td class="alignLeft Fixed100">Zone</td>
+                <td class="alignLeft"><select id="ports-zoneId"></select></td>
+	    </tr>
+	    </table>
+	    </div>
+	    <div id="div-ip_alias"class="tableDiv">
+	    <p>IP Alias</p>
+	    <table id="table-ip_alias" class="Create">
+	        <thead>
+		    <tr>
+			<th id="ipAliasT-address">Address</th>
+			<th id="ipAliasT-netmask">Netmask</th>
+			<th class="Edit Delete BT2">Action</th>
+		    </tr>
+	        </thead>
+	    </table>
+ 	    </div>
+	</div>
+	<div id="panel-dhcp_pool_settings">
+ 	    <div id="div-dhcp_pool_settings" class="tableDiv">
+		<table id="table-dhcp_pool_setting">
+                    <tr>
+			<td class="alignLeft Fixed100">DHCP Type</td>
+                        <td class="alignLeft"><select id="guiDhcpsT-dhcpType"></select></td>
+		    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100">Start IP Address</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-startIp"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"">End IP Address</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-endIp"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"leaseTime">Lease Time</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-leaseTime"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"gateway">Gateway</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-gateway"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"dns1">DNS1</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-dns1"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"dns2">DNS2</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-dns2"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"wins1">WINS1</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-wins1"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"wins2">WINS2</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-wins2"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-1">
+                        <td class="alignRight Fixed100"domainName">Domain Name</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-1-domainName"  /></td>
+                    </tr>
+                    <tr class="guiDhcpsT-dhcpType-2">
+                        <td class="alignRight Fixed100"relayIp">DHCP Relay</td>
+                        <td class="alignLeft"><input type="text" id="guiDhcpsT-dhcpType-2-relayIp"  /></td>
+                    </tr>
+                </table>
+	    </div>
+	</div>
+	<div id="panel-ipv6_settings">
+            <div id="div-ipv6_settings" class="tableDiv">
+                <table id="table-ipv6_settings" class="DualInput Fixed500">
+                    <tr>
+                        <td class="alignRight Fixed125">IPv6 Address</td>
+                        <td class="alignLeft"><input type="text" id="ports-ipv6Address" /></td>
+                    </tr>
+                    <tr>
+                        <td class="alignRight Fixed125">IPv6 Prefix Length</td>
+                        <td class="alignLeft"><input type="text" id="ports-ipv6PrefixLength" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+

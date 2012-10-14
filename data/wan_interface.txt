@@ -1,0 +1,17 @@
+{ "ajaxData": [
+        {
+	"wanIndex"	: "1",
+	"wanName"	: "WAN1",
+	"wanIpAddress"	: "10.10.10.1",
+	"wanIn"		: "2354644",
+	"wanOut"	: "231412"
+	},
+        {
+	"wanIndex"	: "2",
+	"wanName"	: "WAN2",
+	"wanIpAddress"	: "10.10.10.168",
+	"wanIn"		: "2312",
+	"wanOut"	: "2345"
+	}
+    ]
+}

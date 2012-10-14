@@ -1,0 +1,57 @@
+<div class="extraForm">
+    <form id="dialog-form-service" class="templateForm">
+	<div id="dialog-div-service">
+	    <table id="dialog-table-service" class="DialogInput Fixed500">
+		<tr>
+		    <th class="alignLeft BT3">* Name:</th>
+		    <td class="alignLeft"><input type="text" id="service-name" /></td>
+		</tr>
+		<tr>
+		    <th class="alignLeft">  Protocol:</th>
+		    <td class="alignLeft">
+			<select id="service-type">
+                        <option value="0">both(TCP/UDP)</option>
+                        <option value="1">TCP</option>
+                        <option value="2">UDP</option>
+                        <option value="3">ICMP</option>
+                        <option value="4">IP</option>
+			</select>
+		    </td>
+		</tr>
+		<tr class="service-type-0">
+		    <th class="alignRight">* Port Range Start:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-0-param1" /><label for="service-type-0-param1"> (Range: 1~65535)</label></td>
+		</tr>
+		<tr class="service-type-0">
+		    <th class="alignRight">* Port Range End:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-0-param2" /><label for="service-type-0-param2"> (Range: 1~65535)</label></td>
+		</tr>
+		<tr class="service-type-1">
+		    <th class="alignRight">* Port Range Start:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-1-param1" /><label for="service-type-1-param1"> (Range: 1~65535)</label></td>
+		</tr>
+		<tr class="service-type-1">
+		    <th class="alignRight">* Port Range End:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-1-param2" /><label for="service-type-1-param2"> (Range: 1~65535)</label></td>
+		</tr>
+		<tr class="service-type-2">
+		    <th class="alignRight">* Port Range Start:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-2-param1" /><label for="service-type-2-param1"> (Range: 1~65535)</label></td>
+		</tr>
+		<tr class="service-type-2">
+		    <th class="alignRight">* Port Range End:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-2-param2" /><label for="service-type-2-param2"> (Range: 1~65535)</label></td>
+		</tr>
+		<tr class="service-type-3">
+		    <th class="alignRight">* ICMP Type:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-3-param1" /><label for="service-type-3-param1"> (Range: 1~255)</label></td>
+		</tr>
+		<tr class="service-type-4">
+		    <th class="alignRight">* IP:</th>
+		    <td class="alignLeft"><input type="text" id="service-type-4-param1" /><label for="service-type-4-param1"> (Range: 1~255)</label></td>
+		</tr>
+	    </table>
+	</div>
+    </form>
+</div>
+

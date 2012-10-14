@@ -1,0 +1,8 @@
+{ "ajaxData": [
+        {
+	"multipleWanMode"	: "R",
+	"detectionPeriod"	: "",
+	"detectionRetryCount"	: ""
+	}
+    ]
+}

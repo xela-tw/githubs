@@ -1,0 +1,9 @@
+{ "ajaxData": [
+        {
+	"userName"		: "Peter",
+	"addressInformation"	: "192.168.1.168",
+	"loginMethod"		: "Web Login",
+	"sessionTime"		: "300"
+	}
+    ]
+}

@@ -1,0 +1,6 @@
+{
+	"version"		: "1.2.3.4",
+	"lastChecked" 		: "01/01/2012",
+	"lastSuccessfulUpdated"	: "01/01/2012",
+	"patternNumber"		: "PN123456789"
+}

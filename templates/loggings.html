@@ -1,0 +1,243 @@
+<div id="template-loggings"  class="templateDiv">
+
+<div class="tabs">
+    <ul>
+	<li id="tab-view_logs"><a href="#panel-view_logs">View Logs</a></li>
+	<li id="tab-log_settings"><a href="#panel-log_settings">Log Settings</a></li>
+	<li id="tab-logs_facility"><a href="#panel-logs_facility">Logs Facility</a></li>
+    </ul>
+    <div id="panel-view_logs" class="panelDiv">
+    	<div class="criterion">
+	<table class="Query">
+	    <tr>
+		<th>Severiy</th>
+		<td>
+            <select id="querySeverity" class="query-severity">
+                <option value="Emergency">Emergency</option>
+                <option value="Alert">Alert</option>
+                <option value="Critical">Critical</option>
+                <option value="Error">Error</option>
+                <option value="Warning">Warning</option>
+                <option value="Notification">Notification</option>
+                <option value="Information">Information</option>
+                <option value="Debugging">Debugging</option>
+            </select>
+		</td>
+		<th>Facility</th>
+		<td>
+            <select id="queryFacility" class="query-facility">
+                <option value="Kernel">Kernel</option>
+                <option value="System">System</option>
+                <option value="Firewall">Firewall</option>
+                <option value="NAT">NAT</option>
+                <option value="Network">Network</option>
+                <option value="Site-to-Site VPN">Site-to-Site VPN</option>
+                <option value="User">User</option>
+                <option value="Web Filter">Web Filter</option>
+                <option value="AntiVirus">AntiVirus</option>
+            </select>
+		</td>
+	    </tr>
+	    <tr>
+		<th>Source Address</th>
+		<td><input type="text" id="querySourceAddress" class="query-sourceAddress" /></td>
+		<th>Source User</th>
+		<td><input type="text" id="querySourceUser" class="query-sourceUser" /></td>
+	    </tr>
+	    <tr>
+            	<th>Destination Address</th>
+	    	<td><input type="text" id="queryDestinationAddress" class="query-destinationAddress" /></td>
+		<th>Destination User</th>
+		<td><input type="text" id="queryDestinationUser" class="query-destinationUser" /></td>
+	    </tr>
+	    <tr>
+		<th>Period Start Date</th>
+	    	<td><input type="text" id="queryStart" class="query-start" /></td>
+		<th>Period End Date</th>
+		<td><input type="text" id="queryEnd" class="query-end" /></td>
+	    </tr>
+            <tr><td class="colspans" colspan="4"><button class="query-button" >Query</button></td></tr>
+        </table>
+    	</div>
+    	<div class="tableDiv">
+
+	<table id="table-view_logs" class="Export Clear Refresh">
+	    <thead>
+		<tr>
+		    <th id="date">Date</th>
+		    <th id="severity">Severity</th>
+		    <th id="logData">Log Data</th>
+		    <th id="sourceIpAddress">Source IP Address</th>
+		    <th id="destinationIpAddress">Destination IP Address</th>
+		</tr>
+	    </thead>
+	</table>
+
+	</div>
+    </div>
+    <div id="panel-log_settings" class="panelDiv">
+	<div id="div-log_settings" class="labelDiv Confirm">
+	<form id="form-log_settings">
+	    <input type="checkbox" id="enable" />
+	    <label for="enable">Enable</label>
+<!--	    <div class="enable-checked"> -->
+		<div>
+		    <lable for="diskSettings">Disk Settings</label>
+		    <div id="diskSettings">
+			<div>
+			    <label for="bySize">Threshold by size</label>
+			    <input type="text" id="bySize" />
+			</div>
+			<div>
+			    <label for="byDiskSize">Threshold by disk size %</label>
+			    <input type="text" id="byDiskSize" />
+			</div>
+		    </div>
+		</div>
+		<div>
+		    <label for="localLog">Local Log</label>
+		    <div id="localLog">
+		    	<input type="checkbox" id="localLogEnable" />
+		    	<label for="localLogEnable">Enable</label>
+<!--		        <div class="localLogEnable-checked"> -->
+			    <div>
+			<label for="localLogSeverity">Severity</label>
+			<select id="localLogSeverity">
+                	<option value="Emergency">Emergency</option>
+                	<option value="Alert">Alert</option>
+                	<option value="Critical">Critical</option>
+                	<option value="Error">Error</option>
+                	<option value="Warning">Warning</option>
+                	<option value="Notification">Notification</option>
+                	<option value="Information">Information</option>
+                	<option value="Debugging">Debugging</option>
+			</select>
+			    </div>
+<!--		    	</div> -->
+		    </div>
+	        </div>
+		<div>
+		    <label for="remoteLog">Remote Log</label>
+		    <div id="remoteLog">
+		    	<input type="checkbox" id="remoteLogEnable" />
+		    	<label for="remoteLogEnable">Enable</label>
+<!--		    	<div class="remoteLogEnable-checked"> -->
+			    <div>
+		    	        <label for="remoteLogSyslogServer">Syslog Server</label>
+		    	        <input type="text" id="remoteLogSyslogServer" />
+		   	    </div>
+			    <div>     
+		    	    <label for="remoteLogSeverity">Severity</label>
+			    <select id="remoteLogSeverity">
+                		<option value="Emergency">Emergency</option>
+                		<option value="Alert">Alert</option>
+                		<option value="Critical">Critical</option>
+                		<option value="Error">Error</option>
+                		<option value="Warning">Warning</option>
+                		<option value="Notification">Notification</option>
+                		<option value="Information">Information</option>
+                		<option value="Debugging">Debugging</option>
+			    </select>
+			    </div>
+<!--			</div> -->
+		    </div>
+		</div>
+		<div>
+		    <label for="emailAlert">Email Alert</label>
+		    <div id="emailAlert">
+		    	<input type="checkbox" id="emailAlertEnable" />
+		    	<label for="emailAlertEnable">Enable</label>
+<!--		    	<div class="emailAlertEnable-checked"> -->
+			    <label for="sendEmailBySchedule">Send Email by Schedule</label>
+			    <div id="sendEmailBySchedule">
+			    	<div>
+		    	        <label for="emailAlertFrequency">Frequency</label>
+				<select id="emailAlertFrequency">
+                		<option value="Hourly">Hourly</option>
+                		<option value="Daily">Daily</option>
+                		<option value="Weekly">Weekly</option>
+				</select>
+			    	</div>
+			    	<div>
+				<label for="emailAlertDay">Day</label>
+				<select id="emailAlertDay">
+                		<option value="Monday">Monday</option>
+                		<option value="Tuesday">Tuesday</option>
+                		<option value="Wednesday">Wednesday</option>
+                		<option value="Thursday">Thursday</option>
+                		<option value="Friday">Friday</option>
+                		<option value="Saturday">Saturday</option>
+                		<option value="Sunday">Sunday</option>
+				</select>
+			    	</div>
+			    	<div>
+				<label for="emailAlertTime">Time</label>
+				<select id="emailAlertTime">
+                		<option value="00">00:00</option>
+                		<option value="01">01:00</option>
+                		<option value="02">02:00</option>
+                		<option value="03">03:00</option>
+                		<option value="04">04:00</option>
+                		<option value="05">05:00</option>
+                		<option value="06">06:00</option>
+                		<option value="07">07:00</option>
+                		<option value="08">08:00</option>
+                		<option value="09">09:00</option>
+                		<option value="10">10:00</option>
+                		<option value="11">11:00</option>
+                		<option value="12">12:00</option>
+                		<option value="13">13:00</option>
+                		<option value="14">14:00</option>
+                		<option value="15">15:00</option>
+                		<option value="16">16:00</option>
+                		<option value="17">17:00</option>
+                		<option value="18">18:00</option>
+                		<option value="19">19:00</option>
+                		<option value="20">20:00</option>
+                		<option value="21">21:00</option>
+                		<option value="22">22:00</option>
+                		<option value="23">23:00</option>
+				</select>
+			    	</div>
+			    </div>
+<!--		    	</div> -->
+		    	<div>
+		        <label for="Severity">Severity</label>
+			<select id="emailAlertSeverity">
+                	<option value="Emergency">Emergency</option>
+                	<option value="Alert">Alert</option>
+                	<option value="Critical">Critical</option>
+                	<option value="Error">Error</option>
+                	<option value="Warning">Warning</option>
+                	<option value="Notification">Notification</option>
+                	<option value="Information">Information</option>
+                	<option value="Debugging">Debugging</option>
+			</select>
+		    	</div>
+		    </div>
+		</div>
+<!--	    </div> -->
+	</form>
+	</div>
+    </div>
+
+    <div id="panel-logs_facility" class="panelDiv">
+	<div id="div-logs_facility" class="formDiv Confirm">
+	<form id="form-logs_facility">
+	<table id="table-logs_facility">
+	    <thead>
+		<tr>
+		    <th id="logsFacilityName">Name</th>
+		    <th class="checkboxCol" id="logsFacilityLocalLog">Local Log</th>
+		    <th class="checkboxCol" id="logsFacilityRemoteLog">Remote Log</th>
+		    <th class="checkboxCol" id="logsFacilityEmailAlert">Email Alert</th>
+		</tr>
+	    </thead>
+	</table>	
+	</form>
+	</div>
+    </div>
+
+</div>
+
+</div>

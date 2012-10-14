@@ -1,0 +1,56 @@
+<div id="template-administrator_settings"  class="templateDiv">
+
+<div id="div-administrator_settings" class="labelDiv Confirm">
+    <form id="form-administrator_settings">
+	<div class="inlineDiv Halfs">
+	    <table id="table-administrator_settings" class="DualInput">
+	        <caption>Administrator Name and Password</caption>
+		<tr>
+		    <th>User Name</th>
+		    <td><input type="text" id="adminName" /></td>
+		</tr>
+		<tr>
+		    <th>Current Password</th>
+		    <td><input type="password" id="adminOldPwd" /></td>
+		</tr>	
+		<tr>
+		    <th>New Password</th>
+		    <td><input type="password" id="adminNewPwd" /></td>
+		</tr>	
+		<tr>
+		    <th>Confirm New Password</th>
+		    <td><input type="password" id="confirmNewPwd" /></td>
+		</tr>
+	    </table>
+	</div>
+	<div class="inlineDiv Halfs">
+	    <table id="table-session" class="DualInput">
+	        <caption>Session</caption>
+		<tr>
+		    <th>Inactivity Timeout</th>
+		    <td><input type="text" id="loginInactiveTimeout" /> (0~1000) </td>
+		</tr>
+		<tr>
+		    <th>Limit Login Session for Web Login</th>
+		    <td><input type="checkbox" id="loginSessionLimitEnable" /></td>
+		</tr>
+		<tr>
+		    <th>Login Session Limit</th>
+		    <td><input type="text" id="loginSessionLimit" /> (0~1000) </td>
+		</tr>
+		<tr>
+		    <th colspan="2" class="Colspans">Block Password Guessing </th>
+		</tr>
+		<tr>
+		    <th>Max Attempts</th>
+		    <td><input type="text" id="loginFailBlockMaxAttempts" /> (0~1000) </td>
+		</tr>
+		<tr>
+		    <th>Block Access for (second)</th>
+		    <td><input type="text" id="loginFailBlockTime" /> (0~3600) </td>
+		</tr>
+	    </table>
+	</div>
+    </form>
+</div>
+</div>

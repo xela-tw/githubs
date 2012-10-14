@@ -1,0 +1,124 @@
+1. todo list
+
+revise done list, 
+
+make sure each done is 'done'
+
+provide peter, ming the list 
+
+
+2. block indent & group 
+
+
+3. login background 
+
+
+5. menu & dashboard overflow fail
+
+
+6. xmind v12 ready ( compare diff from v9 )
+
+
+7. json sample on antivirus, data from get, post to show 
+
+
+8. revise mockup to correct one, 
+
+
+4. to be solved
+
+update create, edit function
+
+9. finish todo list
+-------------------
+peter 
+1 > 7 > 9 > 6 > 8 
+
+		> 3 > 2 > 5 > 4
+
+========================
+1. revise done list
+
+Dashboard 			( done )
+    System Dashboard 		( done )
+    Network Dashboard 		( done )
+    Security Dashboard 		( done )
+
+Reports
+    Network Status 		( done )
+	Show ARP Table 		( done )
+	Show Routing Table 	( done )
+	DHCP Bindings 		( done )
+	Status Summary 		( done )
+	Traffic Statistics	( done )
+    System Status		( done )
+	Process			( done )
+	Resource Utilization 	( done )
+    NAT Status			( done )
+    Active Users		( done )
+    VPN Status			( done )
+    Active Sessions		( done )
+    IPSec VPN Statistics	( done )
+    Network Reports		( done )
+	Traffic Direction 	( done )
+	Source 			( done )
+	Destination		( done )
+    Security Reports		( done )
+	File Extension		( done )
+	Blocked Host 		( done )
+	Affected Host		( done )
+	Antivirus		( done )
+
+Interface			( done, data processing not done yet )
+    Port
+	Port Configuration	( done )
+    WAN
+	WAN Settings		( done )
+	Multiple WAN Settings	( done )
+    VLAN			( done )
+    DMZ				( done )
+    Zone			( done )
+
+Networking			( done, data processing not done yet )
+    Routing			( done, reform before 0820 0900 )
+    ALG				( done, reform before 0820 0900 )
+    Site-to-Site VPN		( done )
+	IPSec Policies		( done )
+	IKE Policy		( done )
+	Transform Policy	( done )
+    VPN Passthrough		( done, reform before 0820 0900 )
+
+Firewall			( done, data processing not done yet )
+    Rules			( done, reform before 0820 0900 )
+    NAT				( done, reform before 0820 0900 )
+	Dynamic PAT		( done, reform before 0820 0900 )
+	Static NAT		( done, reform before 0820 0900 )
+	Port Forwarding		( done, reform before 0820 0900 )
+	Port Trigger		( done, reform before 0820 0900 )
+	Advanced NAT		( done, reform before 0820 0900 )
+    Session Settings		( done, reform before 0820 0900 )
+    Attack Protection		( done, reform before 0820 0900 )
+
+Security			( done before 0821 with json get & post )
+    AntiVirus
+
+Users				( done, reform before 0820 0900 )
+    Users and Groups		( done, reform before 0820 0900 )
+
+Device				( done, reform before 0820 0900 )
+    Administration		( done, reform before 0820 0900 )
+	Administrator Settings	( done, reform before 0820 0900 )
+	Management Interface Settings	( done, reform before 0820 0900 )
+	Email Alert		( done, reform before 0820 0900 )
+	Backup/Restore		( done, reform before 0820 0900 )
+	Firmware		( done, reform before 0820 0900 )
+	Reboot/Reset/Shutdown	( done, reform before 0820 0900 )
+	Properties		( done, reform before 0820 0900 )
+    Date And Time		( done, reform before 0820 0900 )
+    Loggings			( done, reform before 0820 0900 )
+    Object			( done, reform before 0820 0900 )
+	Address			( done, reform before 0820 0900 )
+	Service			( done, reform before 0820 0900 )
+	Schedules		( done, reform before 0820 0900 )
+    License			( done, reform before 0820 0900 )
+

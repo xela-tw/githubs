@@ -1,0 +1,307 @@
+<div id="template-antivirus"  class="templateDiv">
+  <div class="tabs">
+    <ul>
+      <li id="tab-general_settings"><a href="#panel-general_settings">General Settings</a></li>
+      <li id="tab-http_notification"><a href="#panel-http_notification">HTTP Notification</a></li>
+      <li id="tab-email_notification"><a href="#panel-email_notification">Email Notification</a></li>
+      <li id="tab-address_exceptions"><a href="#panel-address_exceptions">Address Exceptions</a></li>
+      <li id="tab-file_extensions"><a href="#panel-file_extensions">File Extensions</a></li>
+      <li id="tab-signature"><a href="#panel-signature">Signature</a></li>
+    </ul>
+    <div id="panel-general_settings" class="panelDiv">
+      <div id="div-general_settings" class="Confirm">
+      <form id="form-general_settings">
+        <div class="labelDiv">
+          <input id="enable" type="checkbox" />
+          <label for="enable" class="Bold">Enbale</label>
+          <div class="enable-checked">
+            <div id="table-zones" class="tableDiv Fixed500 ">
+	      <p class="Bold">Zone to Scan</p>
+              <table id="table-zones" class="TrioInput">
+                <tr>
+                  <th class="leftCol">Available Zones</th>
+                  <th class="midCol"></th>
+                  <th class="rigthCol">Selected Zones</th>
+                </tr>
+                <tr>
+                  <td><select id="selectedZonesTPool" multiple="multiple" class="Multiples"></select></td>
+                  <td><button class="Move2Del" id="Move2Del-selectedZonesT"><span class="ui-icon"></span></button><button class="Move2Add" id="Move2Add-selectedZonesT"><span class="ui-icon"></span></button></td>
+                  <td><select id="selectedZonesT" multiple="multiple" class="Multiples"></select></td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <p class="Bold">Application to Scan</p>
+              <div id="div-http" class="inlineDiv Fixed ">
+                <table id="table-http" class="DualInput">
+                  <caption>HTTP</caption>
+                  <tr>
+                    <th>Enable</th>
+                    <td><input type="checkbox" id="httpEnable" /></td>
+                  </tr>
+                  <tr>
+                    <th>Logging</th>
+                    <td><input type="checkbox" id="httpLog" /></td>
+                  </tr>
+                  <tr>
+                    <th>Action</th>
+                    <td>
+                      <select id="httpAct">
+                        <option value="0">none</option>
+                        <option value="1">notify</option>
+                        <option value="2">notify + drop connection</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="table-ftp" class="inlineDiv Fixed ">
+                <table id="table-ftp" class="DualInput">
+                  <caption>FTP</caption>
+                  <tr>
+                    <th>Enable</th>
+                    <td><input type="checkbox" id="ftpEnable" /></td>
+                  </tr>
+                  <tr>
+                    <th>Logging</th>
+                    <td><input type="checkbox" id="ftpLog" /></td>
+                  </tr>
+                  <tr>
+                    <th>Action</th>
+                    <td>
+                      <select id="ftpAct">
+                        <option value="0">none</option>
+                        <option value="1">drop connection</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="table-smtp" class="inlineDiv Fixed ">
+                <table id="table-smtp" class="DualInput">
+                  <caption>SMTP</caption>
+                  <tr>
+                    <th>Enable</th>
+                    <td><input type="checkbox" id="smtpEnable" /></td>
+                  </tr>
+                  <tr>
+                    <th>Logging</th>
+                    <td><input type="checkbox" id="smtpLog" /></td>
+                  </tr>
+                  <tr>
+                    <th>Action</th>
+                    <td>
+                      <select id="smtpAct">
+                        <option value="0">none</option>
+                        <option value="1">notify</option>
+                        <option value="2">notify + destruct file</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="table-pop3" class="inlineDiv Fixed ">
+                <table id="table-pop3" class="DualInput">
+                  <caption>POP3</caption>
+                  <tr>
+                    <th>Enable</th>
+                    <td><input type="checkbox" id="pop3Enable" /></td>
+                  </tr>
+                  <tr>
+                    <th>Logging</th>
+                    <td><input type="checkbox" id="pop3Log" /></td>
+                  </tr>
+                  <tr>
+                    <th>Action</th>
+                    <td>
+                      <select id="pop3Act">
+                        <option value="0">none</option>
+                        <option value="1">notify</option>
+                        <option value="2">notify + destrcut file</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div>
+              <p class="Bold">Maximum File Size to Scan</p>
+              <input type="text" id="maxFileSize" /> (1~10240, 0=unlimited) <span class="error"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+    <div id="panel-http_notification" class="panelDiv">
+      <div id="div-http_notification" class="enable-checked labelDiv Confirm">
+      <form id="form-http_notification">
+        <table id="table-http_notification" class="DualInput Fixed500">
+          <tr>
+            <th colspan="2" class="alignLeft">Notification Content</th>
+          </tr>
+          <tr>
+            <td colspan="2" class="alignLeft"><textarea id="httpNotify" cols="80" rows="5"></textarea></td>
+          </tr>
+        </table>
+      </form>
+      </div>
+    </div>
+    <div id="panel-email_notification" class="panelDiv">
+      <div id="div-email_notification" class="enable-checked labelDiv Confirm">
+        <div id="div-email_notification">
+          <table id="table-email_notification" class="DualList Halfs">
+            <tr>
+              <th>Email Notification Status</th>
+              <td><p id="status"></p></td>
+            </tr>
+            <tr>
+              <th>From Email</th>
+              <td><p id="formMail"></p></td>
+            </tr>
+            <tr>
+              <th>SMTP Server</th>
+              <td><p id="smtpServer"></p></td>
+            </tr>
+            <tr>
+              <th>SMTP Authenication</th>
+              <td><p id="smtpAuth"></p></td>
+            </tr>
+          </table>
+        </div>
+        <form id="form-email_notification">
+        <div>
+          <div>
+            <label for="mailTag">Mail Tag</label><br />
+            <input type="text" id="mailTag" />
+          </div>
+          <div>
+            <p>Mail Content</p>
+	    <textarea id="mailContent" cols="80" rows="5"></textarea>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <div id="panel-address_exceptions" class="panelDiv">
+      <div id="div-address_exceptions" class="enable-checked tableDiv Confirm">
+        <table id="table-address_exceptions" class="Create">
+          <thead>
+            <tr>
+              <th id="srcAddrType">Source</th>
+              <th id="dstAddrType">Destination</th>
+              <th id="log">Log</th>
+              <th class="Edit Delete">Action</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+    <div id="panel-file_extensions" class="panelDiv">
+      <div id="div-file_extensions" class="enable-checked Confirm">
+        <div class="inlineDiv Fixed">
+          <h4 class="Bold">MIME Exception List</h4>
+          <div id="div-mime" class="tableDiv">
+            <table id="table-mime" class="Create">
+              <thead>
+                <tr>
+                  <th id="mime">MIME</th>
+                  <th class="Edit Delete">Action</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <div class="inlineDiv Fixed">
+          <h4 class="Bold">File Extension Excetpion List</h4>
+          <div id="div-file_extension" class="tableDiv">
+            <table id="table-file_extension" class="Create">
+              <thead>
+                <tr>
+                  <th id="fileExt">File Extension</th>
+                  <th class="Edit Delete">Action</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="panel-signature" class="panelDiv">
+      <div id="div-signature" class="enable-checked labelDiv Confirm">
+	<p class="Bold">Virus Database</p>
+      <form id="form-signature">
+        <table id="table-signature" class="TrioInput">
+          <tr>
+            <td class="alignLeft">Auto Update</td>
+            <td class="alignCenter"><input type="checkbox" id="autoUpdate" value="1" /></td>
+            <td class="alignLeft"><button class="autoUpdate-checked" id="startUpdate">Start Update</button</td>
+          </tr>
+          <tr>
+            <td class="alignLeft">Schedule</td>
+            <td class="alignCenter"><input class="autoUpdate-checked" type="checkbox" id="schedules" value="1" /></td>
+            <td class="alignLeft">Time&nbsp;
+              <select class="autoUpdate-checked Chains schedules-checked" id="time">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              </select>
+                    &nbsp;Day&nbsp;
+              <select class="autoUpdate-checked Chains schedules-checked" id="day">
+              <option value="0">Sunday</option>
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Firday</option>
+              <option value="6">Saturday</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="alignLeft">Version</td>
+            <td></td>
+            <td class="alignLeft"><p id="version"></p></td>
+          </tr>
+          <tr>
+            <td class="alignLeft">Last Checked</td>
+            <td></td>
+            <td class="alignLeft"><p id="lastChecked"></p></td>
+          </tr>
+          <tr>
+            <td class="alignLeft">Last Successful Updated</td>
+            <td></td>
+            <td class="alignLeft"><p id="lastUpdated" readonly="readonly"></p></td>
+          </tr>
+          <tr>
+            <td class="alignLeft">Pattern Number</td>
+            <td></td>
+            <td class="alignLeft"><p id="ptnNum"></p></td>
+          </tr>
+        </table>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>

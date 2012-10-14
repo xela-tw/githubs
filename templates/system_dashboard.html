@@ -1,0 +1,126 @@
+<div id="template-system_dashboard" class="templateDiv">
+
+<div id="system_information" class="accordions Halfs">
+    <h4><a href="#">System Information</a><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-system_information" class="DualList TH40 ">
+	<tr>
+            <th id="systemName" >System Name</th>
+	</tr>
+	<tr>
+	    <th id="model">Model</th>
+	</tr>
+	<tr>
+	    <th id="primaryFirmware">Primary Firmware</th>
+	</tr>
+	<tr>
+	    <th id="secondaryFirmware">Secondary Firmware</th>
+	</tr>
+	<tr>
+	    <th id="serialNumber">Serial Number</th>
+	</tr>
+	<tr>
+	    <th id="systemUptime">System Uptime</th>
+	</tr>
+    </table>
+    </div>
+</div>
+
+<div id="resource_utilizations" class="accordions Halfs">
+    <h4><a href="#">Resource Utilization</a><img id="reports-system_status-resource_utilization" class="Link" src="css/images/magnifier.png" alt="Show Resource Utilization" /><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-resource_utilizations" class="DualList TH40">
+        <tr>
+            <th id="dramSize">DRAM Size</th>
+        </tr>
+        <tr>
+            <th id="flashSize">Flash Size</th>
+        </tr>
+        <tr>
+            <th id="cpuUtilization">CPU Utilization</th>
+        </tr>
+        <tr>
+            <th id="memoryUtilization">Memory Utilization</th>
+        </tr>
+    </table>
+    </div>
+</div>
+
+
+<div id="site_to_site_vpns" class="accordions Halfs">
+    <h4><a href="#">Site-to-Site VPN</a><img id="reports-vpn_status-active_sessions" class="Link" src="css/images/magnifier.png" alt="Show Active Sessions" /><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-site_to_site_vpns" class="DualList TH40">
+    	<tr>
+	    <th id="tunnelNumber">Tunnel Number</th>
+    	</tr>
+    </table>
+    </div>
+</div>
+
+<div id="wan_interface" class="accordions Halfs">
+    <h4><a href="#">Wan Interface</a><img id="interface-wan" class="Link" src="css/images/magnifier.png" alt="Show WAN Settings" /><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-wan_interface" class="List">
+        <thead>
+            <tr>
+                <th id="wanIndex" style="width:15%">Index</th>
+                <th id="wanName" style="width:15%">Name</th>
+                <th id="wanIpAddress" style="width:25%">IP Address</th>
+                <th id="wanIn" style="width:20%">In (KB/s)</th>
+                <th id="wanOut" style="width:25%">Out (KB/s)</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+</div>
+
+<div id="lan_interface" class="accordions Halfs">
+    <h4><a href="#">Lan Interface</a><img id="interface-lan" class="Link" src="css/images/magnifier.png" alt="Show VLAN" /><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-lan_interface" class="List">
+        <thead>
+            <tr>
+                <th id="lanIndex" style="width:20%">Index</th>
+                <th id="lanName" style="width:20%">Name</th>
+                <th id="lanDhcpMode" style="width:30%">DHCP Mode</th>
+                <th id="lanIpAddress" style="width:30%">IP Address</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+</div>
+
+<div id="physical_ports" class="accordions Halfs">
+    <h4><a href="#">Physical Ports</a><img id="interface-port" class="Link" src="css/images/magnifier.png" alt="Show Physical Interface" /><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-physical_ports" class="List">
+        <thead>
+            <tr>
+                <th id="portPort" style="width:20%">Port#</th>
+                <th id="portName" style="width:20%">Name</th>
+                <th id="portLink" style="width:20%">Link</th>
+                <th id="portSpeed" style="width:20%">Speed</th>
+                <th id="portDuplex" style="width:20%">Duplex</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+</div>
+
+<div id="recent_system_logs" class="accordions">
+    <h4><a href="#">Recent System Logs</a><img id="reports-view_all_logs" class="Link" src="css/images/magnifier.png" alt="Show View All Logs" /><img class="Close" src="css/images/close.png" alt="Hide Information" /></h4>
+    <div class="tableDiv">
+    <table id="table-recent_system_logs" class="List">
+        <thead>
+            <tr>
+                <th id="logsTime" style="width:10%">Time</th>
+                <th id="logsLevel" style="width:10%">Level</th>
+                <th id="logsDescription" style="width:80%">Description</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+</div>
+
+</div>

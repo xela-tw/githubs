@@ -1,0 +1,78 @@
+<div id="template-date_and_time"  class="templateDiv">
+<div id="div-date_and_time" class="formDiv Confirm">
+<form id="form-date_and_time">
+    <div class="labelDiv">
+	<div id="div-time_zone"> 
+	    <table id="table-time_zone" class="Fixed500">
+	    <tr>
+    	    	<th class="Bold alignLeft width100">Time Zone</th>
+	    	<td class="alignLeft"><select id="tzName"></select></td>
+	    </tr>
+	    </table>
+	</div>
+	<div id="div-current_time">
+            <table id="table-current_time" class="Fixed500">
+	    <tr>
+	   	<th class="Bold alignLeft width100">Current Time</th>
+	    	<td class="alignLeft"><input type="text" readonly="readonly" class="noneTD width200"  id="systime" /></td>
+	    </tr>
+            </table>
+	</div>
+	<div id="div-time_settings">
+	    <table id="table-time_settings" class="">
+		<tr>
+		    <td class="Bold alignLeft">Time settings</td>
+		    <td></td>
+		    <td></td>
+		</tr>
+		<tr>
+		    <td class="Bold alignLeft">Manual Set System Time</label></td>
+		    <td class="alignLeft"><input type="radio" id="mode-0" name="mode" value="0" /></td>
+		    <td></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="alignLeft">Date</td>
+		    <td class="alignLeft"><input class="mode-0" type="text" id="sysDate" /></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="alignLeft">Time</td>
+		    <td class="alignLeft"><lable for="hour"> Hour </label><select class="mode-0" id="hour"></select><label for="minute"> Minute </label><select class="mode-0" id="minute"></select></label><label for="second"> Second </label><select class="mode-0" id="second"></select></td>
+		</tr>
+		<tr>
+		    <td class="Bold alignLeft">Automaticlly Set System Time</td>
+		    <td class="alignLeft"><input type="radio" id="mode-1" name="mode" value="1" /></td>
+		    <td></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="alignLeft">Dalylight Saving Time Adjustment</td>
+		    <td class="alignLeft"><input class="mode-1" type="checkbox" id="dstEnable" value="1" /></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="alignLeft">Default NTP Server</td>
+	    	    <td class="alignLeft"><input class="mode-1" type="radio" id="ntpServerType-0" name="ntpServerType" value="0" /></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="alignLeft">Customer NTP Server</td>
+		    <td class="alignLeft"><input class="mode-1" type="radio" id="ntpServerType-1" name="ntpServerType" value="1" /></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="PH15 alignLeft">server 1 Name/IP Address</td>
+		    <td class="alignLeft"><input class="mode-1 ntpServerType-1" type="text" id="ntpCustomServer1" /></td>
+		</tr>
+		<tr>
+		    <td></td>
+		    <td class="PH15 alignLeft">Server 2 Name/IP Address</td>
+		    <td class="alignLeft"><input class="mode-1 ntpServerType-1" type="text" id="ntpCustomServer2" /></td>
+		</tr>
+	    </table>
+	</div>
+    </div>
+</form>
+</div>
+</div>

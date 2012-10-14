@@ -1,0 +1,31 @@
+<div id="template-antivirus_report"  class="templateDiv">
+    <div class="criterion">
+	<fieldset>
+	    <legend>Period</legend>
+	    <b>Start Date: </b><input type="text" class="query-start" />
+	    <b>End Date: </b><input type="text" class="query-end" />
+	    <b>Aggregate By</b>	
+	    <select class="query-select">
+		<option value="None">None</option>
+		<option value="Src IP/User">Src IP/User</option>
+		<option value="Dst IP/User">Dst IP/User</option>
+		<option value="Virus Name">Virus Name</option>
+	    </select>
+	    <button class="query-button">Query</button>
+	</fieldset>
+    </div>
+    <div id="div-antivirus_report" class="tableDiv">
+	<table id="table-antivirus_report">
+	    <thead>
+		<tr>
+		<th id="srcIpUser">Src IP/User</th>
+		<th id="dstIpUser">Dst IP/User</th>
+		<th id="protocol">Protocol</th>
+		<th id="virusName">Virus Name</th>
+		<th id="startDate">Start Date</th>
+		<th id="endDate">End Date</th>
+		</tr>
+	    </thead>
+	</table>
+    </div>
+</div>

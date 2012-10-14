@@ -1,0 +1,58 @@
+<div id="template-attack_protection" class="templateDiv">
+    <div id="div-attack_protection" class="labelDiv Confirm">
+<form id="form-attack_protection">
+        <div>
+	    <label for="wanSecurityChecks">WAN Security Checks</label>
+    	    <div>
+		<input id="blockPingToWanInterface" type="checkbox" value="Y" />
+		<label for="blockPingToWanInterface" >Block Ping to WAN Interface</label>
+	    </div>
+	    <div>
+		<input id="enablePortScanProtection" type="checkbox" />
+		<label for="enablePortScanProtection" >Enable Port Scan Protection</label>
+	    </div>
+	    <div>
+		<input id="enableTcpFloodingProtection" type="checkbox" />
+		<label for="enableTcpFloodingProtection" >Enable TCP Flooding Protection</label>
+	    </div>
+	</div>
+	<div>
+	    <label for="lanSecurityChecks" >LAN Security Checks</label>
+	    <div>
+		<input id="enableUdpFloodingProtection" type="checkbox" />
+		<label for="enableUdpFloodingProtection">Enable UDP Flooding Protection</label>
+	    </div>
+	</div>
+	<div>
+	    <label for="firewallSettings" >Firwall Settings</label>
+	    <div>
+		<input id="blockIcmpNotification" type="checkbox" />
+		<label for="blockIcmpNotification">Block ICMP Notification</label>
+	    </div>
+	    <div>
+		<input id="blockFragmentedPackets" type="checkbox" />
+		<label for="blockFragmentedPackets">Block Fragmented Packets</label>
+	    </div>
+	    <div>
+		<input id="blockMulticastPackets" type="checkbox" />
+		<label for="blockMulticastPackets">Block Multicast Packets</label>
+	    </div>
+	</div>
+	<div>
+	    <label for="dosAttacks" >DoS Attacks</label>
+    	    <div>
+		<label for="syncFloodThreshold">SYN Flood Threshold</label><br />
+		<input id="synFloodThreshold" type="text" />
+    	    </div>
+    	    <div>
+		<label for="echoStormThreshold">Echo Storm Threshold</label><br />
+		<input id="echoStomThreshold" type="text" />
+    	    </div>
+    	    <div>
+		<label for="icmpFloodThreshold">ICMP Flood Threshold</label><br />
+		<input id="icmpFloodThreshold" type="text" />
+	    </div>
+	</div>
+</form>
+    </div>
+</div>

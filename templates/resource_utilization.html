@@ -1,0 +1,31 @@
+<div id="template-resource_utilization" class="templateDiv">
+    <div class="tabs charts">
+	<ul>
+	    <li id="tab-cpu_utilization"><a href="#panel-cpu_utilization">CPU Utilization</a></li>
+	    <li id="tab-memory_utilization"><a href="#panel-memory_utilization">Memoriy Utilization</a></li>
+	</ul>
+	<div id="panel-cpu_utilization">
+            <div id="date-cpu_utilization">
+                <fieldset class="datepickers">
+                    <legend>Period</legend>
+                    <b>Start Date: </b><input type="text" class="query-start" />
+                    <b>End Date: </b><input type="text" class="query-end" />
+		    <button class="query-button">Query</button>
+                </fieldset>
+            </div>
+            <div id="chart-cpu_utilization"></div>
+	</div>
+	<div id="panel-memory_utilization">
+	    <div id="date-memory_utilization">
+                <fieldset class="datepickers">
+                    <legend>Period</legend>
+                    <b>Start Date: </b><input type="text" class="query-start" />
+                    <b>End Date: </b><input type="text" class="query-end" />
+		    <button class="query-button">Query</button>
+                </fieldset>
+            </div>
+            <div id="chart-memory_utilization"></div>
+
+	</div>
+    </div>
+</div>

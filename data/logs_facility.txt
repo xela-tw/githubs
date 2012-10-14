@@ -1,0 +1,53 @@
+{ "ajaxData": [
+        {
+	"logsFacilityName"		: "Kernel",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "System",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "Firewall",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "NAT",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "Network",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "Site-to-Site VPN",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "User",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	},
+        {
+	"logsFacilityName"		: "Antivirus",
+	"logsFacilityLocalLog"	: "0",
+	"logsFacilityRemoteLog"	: "0",
+	"logsFacilityEmailAlert"	: "0"
+	}
+    ]
+}
+
+

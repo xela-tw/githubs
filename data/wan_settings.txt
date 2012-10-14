@@ -1,0 +1,21 @@
+{ "ajaxData": [
+        {
+	"name"			: "WAN1",
+	"zone"			: "WAN",
+	"ip_address"		: "140.2.2.23",
+	"physical_port"		: "GE2",
+	"wan_type"		: "DHCP",
+	"weight"		: "Average",
+	"backup_of"		: "WAN2"
+	},
+        {
+	"name"			: "WAN2",
+	"zone"			: "GUEST",
+	"ip_address"		: "",
+	"physical_port"		: "",
+	"wan_type"		: "Static IP",
+	"weight"		: "Very Low",
+	"backup_of"		: "WAN1"
+	}
+    ]
+}

@@ -1,0 +1,21 @@
+{ "ajaxData": [
+        {
+	"ip_address"		: "192.168.1.100",
+	"mac_address"		: "00:11:22:33:44:55",
+	"lease_start_time"	: "8/3/12 12:00",
+	"lease_end_time"	: "8/4/12 12:00"
+	},
+        {
+	"ip_address"		: "192.168.1.101",
+	"mac_address"		: "00:11:22:33:44:56",
+	"lease_start_time"	: "8/2/12 23:00",
+	"lease_end_time"	: "8/3/12 23:00"
+	},
+        {
+	"ip_address"		: "10.1.1.20",
+	"mac_address"		: "00:11:22:33:23:32",
+	"lease_start_time"	: "8/3/12 12:00",
+	"lease_end_time"	: "8/4/12 12:00"
+	}
+    ]
+}

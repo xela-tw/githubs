@@ -1,0 +1,27 @@
+{ "ajaxData": [
+	{
+	"key"	: "System Name",
+	"value"	: "Titan UTM"
+	},
+	{
+	"key" : "Model",
+	"value"	: "Archer"
+	},
+	{
+	"key" : "Primary Firmware",
+	"value"	: "1.0.12"
+	},
+	{
+	"key" : "Secondary Firmware",
+	"value"	: "1.0.2"
+	},
+	{
+	"key" : "Seiral Number",
+	"value"	: "SN-1111"
+	},
+	{
+	"key" : "System Uptime",
+	"value"	: "32 days 18 hours 20 minutes"
+	}
+    ]
+}

@@ -1,0 +1,50 @@
+<div class="extraForm">
+    <form id="form-group_service" class="templateForm">
+        <div class="labelDiv">
+	    <div id="div-group_service-name">
+		<table id="table-group_service-name" class="Fixed500">
+		    <tr>
+			<th class="BT3">* Group Name</th>
+			<td class="alignLeft"><input type="text" id="group_service-name" /></td>
+		    </tr>
+		</table>
+	    </div>
+	    <div id="div-group_service-idList" class="tableDiv Fixed500">
+                <table id="table-group_service-idList" class="TrioInput">
+                    <tr>
+                        <th class="leftCol"></th>
+                        <th class="midCol"></th>
+                        <th class="rigthCol"></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="group_service-idListPool" multiple="multiple" class="Multiples"></select>
+                        </td>
+                        <td><button class="Move2Del" id="Move2Del-group_service-idList"><span class="ui-icon"></span></button><button class="Move2Add" id="Move2Add-group_service-idList"><span class="ui-icon"></span></button></td>
+                        <td><select id="group_service-idList" multiple="multiple" class="Multiples"></select>
+                    </tr>
+                </table>
+            </div>
+	    <div>
+		<label for="div-service_detail">Service Detail</label>
+		<div id="div-service_detail" class="tableDiv Halfs">
+		    <table id="table-service_detail" class="DualList Halfs">
+			<tr>
+			    <th>Name:</th>
+			    <td><p id="serviceName"></p></td>
+			</tr>
+			<tr>
+			    <th>Protocol:</th>
+			    <td><p id="serviceProtocol"></p></td>
+			</tr>
+			<tr>
+			    <th>Value:</th>
+			    <td><p id="serviceValue"></p></td>
+			</tr>
+		    </table>
+		</div>
+	    </div>
+        </div>
+    </form>
+</div>
+

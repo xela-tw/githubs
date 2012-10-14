@@ -1,0 +1,9 @@
+{
+    "groupListT":
+	[
+	{"gid":"1501","name":"default","webLoginPriv":"1","portalPriv":"0","cgiSetListId":"","cgiAction":"0"},
+	{"gid":"1502","name":"reportGroup","webLoginPriv":"2","portalPriv":"0","cgiSetListId":"","cgiAction":"0"},
+	{"gid":"1503","name":"mngGroup","webLoginPriv":"3","portalPriv":"1","cgiSetListId":"","cgiAction":"0"},
+	{"gid":"1504","name":"captiveGroup","webLoginPriv":"0","portalPriv":"1","cgiSetListId":"","cgiAction":"0"}
+	]
+}

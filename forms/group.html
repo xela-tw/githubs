@@ -1,0 +1,47 @@
+<div class="dialogForm">
+    <form id="form-ipsec_policies" class="templateForm">
+        <div class="tabs">
+            <ul>
+                <li id="tab-group_settings"><a href="#panel-group_settings">Group Settings</a></li>
+                <li id="tab-membership"><a href="#panel-membership">Membership</a></li>
+            </ul>
+            <div id="panel-group_settings">
+                <div id="div-group_settings" class="tableDiv">
+		    <table id="div-group_settings" class="Fixed500">
+		    	<tr>
+			    <td class="alignLeft Fixed150">Name</td>
+			    <td class="alignLeft"><input type="text" id="group-name" /></td>
+		    	</tr>
+		    	<tr>
+			    <td class="alignLeft" colspan="2">Services</td>
+                        <tr>
+                       	    <td class="alignRight Fixed150">Web Login</td>
+                            <td class="alignLeft"><select id="group-webLoginPriv"></select></td>
+                        </tr>
+			<tr>
+			    <td class="alignRight Fixed150">Captive Portal Enable</td>
+			    <td class="alignLeft"><input type="checkbox" id="group-portalPriv" value="1" /></td>
+			</tr>
+		    </table>
+                </div>
+            </div>
+	    <div id="panel-membership">
+                <div id="div-membership" class="tableDiv">
+		    <table id="table-membership" class="TrioInput">
+			<tr>
+			    <th class="leftCol">Users</th>
+			    <th class="midCol">Action</th>
+			    <th class="rightCol">Joined</th>
+			</tr>
+			<tr>
+			    <td><select id="selectedGroupPool" multiple="multiple" class="Multiples"></select></td>
+                            <td><button class="Move2Del" id="Move2Del-selectedGroup"><span class="ui-icon"></span></button><button class="Move2Add" id="Move2Add-selectedGroup"><span class="ui-icon"></span></button></td>
+			    <td><select id="selectedGroup" multiple="multiple" class="Multiples"></select></td>
+			</tr>
+		    </table>
+		</div>
+	    </div>
+        </div>
+    </form>
+</div>
+
